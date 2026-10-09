@@ -39,7 +39,7 @@ In deze volgorde, tenzij bij de versie anders staat:
 7. Contact: bellen, WhatsApp, mail.
 8. Onderbalk: naam, KvK-nummer, contactgegevens.
 
-## Versie A: Klassiek (`klassiek/`)
+## Versie A: Klassiek (`claude/klassiek/`)
 
 Gebaseerd op de opbouw van dehoutrotreparateur.nl, de site die Melvins vader mooi vindt.
 
@@ -49,7 +49,7 @@ Gebaseerd op de opbouw van dehoutrotreparateur.nl, de site die Melvins vader moo
 - Geen animaties en geen JavaScript behalve de voor/na-schuif.
 - Teksten zijn eigen teksten. Van de voorbeeldsite komt alleen de opbouw; het bedrijf werkt in dezelfde regio.
 
-## Versie B: Modern (`modern/`)
+## Versie B: Modern (`claude/modern/`)
 
 Richting gekozen door Tim uit drie voorbeelden: buildCo (build-co.framer.website), ForgeBuilt (forgebuilt.framer.website) en Formwork (formwork.framer.website). Wat die drie delen en wat versie B overneemt: warme, rustige kleuren, sierlijke koppen, grote foto's en veel ruimte. Het is de sfeer van een interieur- of architectenbureau, niet stoer of industrieel.
 
@@ -58,12 +58,13 @@ Richting gekozen door Tim uit drie voorbeelden: buildCo (build-co.framer.website
 - Grote foto's, ruime marges, weinig tekst per sectie.
 - De voor/na-schuif staat in het openingsbeeld als blikvanger; onderdeel 4 vervalt daardoor als losse sectie.
 - Diensten als tegels in een raster.
-- Rustige animaties bij het scrollen met Motion en soepel scrollen met Lenis, beide via een script-tag. Wie in zijn systeem "minder beweging" heeft aangezet, krijgt geen animaties.
+- Rustige animaties bij het laden en scrollen in gewone CSS, en soepel scrollen met Lenis via een script-tag. Wie in zijn systeem "minder beweging" heeft aangezet, krijgt geen animaties.
+- Motion is bij het bouwen vervallen: het script verborg de inhoud en liet die door de bibliotheek terugkomen, en dat eindigde met elementen die tot nul gekrompen waren. In CSS kan de inhoud niet verborgen blijven hangen. In browsers zonder `animation-timeline` (nu nog Firefox) staat de inhoud stil in beeld.
 
 ## Techniek
 
 - Per versie een eigen map met `index.html` en `style.css`. Geen bouwstap, geen npm.
-- Gedeelde map `fotos/` voor beeld dat beide versies gebruiken.
+- Elke versie heeft zijn eigen map `fotos/`, zodat de map op zichzelf werkt. Een gedeelde map buiten de versie laadde niet in Safari bij het openen als los bestand, en zou ook breken als elke versie apart online komt.
 - Voor/na-schuif: twee foto's over elkaar, een `<input type="range">` bepaalt hoeveel van de bovenste zichtbaar is. Werkt met muis, vinger en toetsenbord. Geen library.
 - Iconen: Phosphor Icons, als SVG in de pagina gezet.
 - Lettertypes via Google Fonts. Niet Inter.
@@ -73,11 +74,13 @@ Richting gekozen door Tim uit drie voorbeelden: buildCo (build-co.framer.website
 
 Beide volledige sites krijgen later hetzelfde beheersysteem als `web-oostenrijk`: Decap CMS op `/admin/`, met alle teksten in `content/nl.json`. Melvins vader past daar zelf tekst aan en kan foto's uploaden. De opzet uit `web-oostenrijk` (`admin/`, `tools/build-admin-config.py`, de lader in `index.html`) wordt hergebruikt; vertalen vervalt, want er is één taal.
 
+Open punt (9 oktober 2026): Decap CMS slaat wijzigingen in `web-oostenrijk` op via Git Gateway van Netlify. Netlify noemt Git Gateway in zijn eigen documentatie deprecated: bestaande sites blijven werken, nieuwe configuraties worden afgeraden en fouten worden niet meer hersteld. Voor ATO zou het een nieuwe configuratie zijn. Welk beheersysteem het wordt, is daarom nog niet besloten; Pages CMS (uitnodigen per e-mail, geen GitHub-account nodig) is de eerste kandidaat en moet eerst met een proef worden getest. `content/nl.json` en de `data-i18n`-sleutels blijven in elk geval bruikbaar.
+
 In de mockups staat de tekst nog gewoon in de HTML. Elk stuk tekst dat later aanpasbaar moet zijn krijgt wel al een `data-i18n`-sleutel met dezelfde naamgeving als in `web-oostenrijk`, zodat aansluiten geen verbouwing wordt.
 
 ## Tijdelijk beeld
 
-- Rechtenvrije stockfoto's (Unsplash of Pexels) in `fotos/tijdelijk/`, met een `BRONNEN.md` waarin per foto de herkomst staat.
+- Rechtenvrije stockfoto's (Unsplash of Pexels) in `fotos/tijdelijk/` binnen elke versie, met een `BRONNEN.md` waarin per foto de herkomst staat.
 - De AI-foto's van de flyer worden niet gebruikt.
 - Geen beeldmerk; de naam staat in letters.
 
