@@ -84,6 +84,13 @@ In de mockups staat de tekst nog gewoon in de HTML. Elk stuk tekst dat later aan
 - De AI-foto's van de flyer worden niet gebruikt.
 - Geen beeldmerk; de naam staat in letters.
 
+## Keuzes na de mockups (9 oktober 2026)
+
+- `claude/modern` valt af.
+- Van de vijf interactieve proefjes in `claude/ideeen/` wil Tim het klikbare huis (idee 1) en de offerte-hulp via WhatsApp (idee 2).
+- De voor/na-galerij (idee 3) alleen als Melvins vader echte voor- en na-foto's van hetzelfde werk heeft. Zonder zulke paren wordt het een gewone projectgalerij.
+- Postcodecheck (idee 4) en gevelkleur kiezen (idee 5) zijn niet gekozen.
+
 ## Buiten dit ontwerp
 
 - Losse pagina's (diensten, projecten, over ons, contact).

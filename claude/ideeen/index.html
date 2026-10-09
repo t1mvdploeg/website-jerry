@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Interactieve ideeën | ATO Advies & Onderhoud</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap">
+<style>
+  /* Schetspagina: vijf ruwe proefjes om uit te kiezen. Alles in één bestand, niets hiervan is af. */
+  :root { --blue: #1D5A8A; --ink: #2B2F33; --soft: #F3F6F9; --line: #D9E0E6; --wood: #A8763E; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 400 1.05rem/1.6 Lato, system-ui, sans-serif; color: var(--ink); background: #fff; }
+  h1, h2, h3 { font-family: Montserrat, system-ui, sans-serif; line-height: 1.2; margin: 0 0 .5rem; }
+  h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); }
+  h2 { font-size: clamp(1.3rem, 3vw, 1.7rem); }
+  h3 { font-size: 1.1rem; }
+  p { margin: 0 0 1rem; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+  header { background: var(--blue); color: #fff; padding: 2.5rem 0 2rem; }
+  header p { max-width: 60ch; margin: 0; opacity: .92; }
+  section { padding: 3rem 0; border-bottom: 1px solid var(--line); }
+  section:nth-of-type(even) { background: var(--soft); }
+  .nr { display: inline-block; font: 700 .8rem/1 Montserrat, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--blue); margin-bottom: .6rem; }
+  .intro { max-width: 62ch; }
+  .note { font-size: .9rem; color: #5B6570; }
+  .two { display: grid; gap: 1.5rem; align-items: start; }
+  @media (min-width: 760px) { .two { grid-template-columns: 1.3fr 1fr; } }
+  .panel { background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--blue); padding: 1.1rem 1.25rem; min-height: 9rem; }
+  button, .btn { font: 700 .95rem/1.2 Montserrat, sans-serif; cursor: pointer; }
+  .btn { display: inline-block; padding: .8rem 1.2rem; background: var(--blue); color: #fff; border: 2px solid var(--blue); border-radius: 4px; text-decoration: none; }
+  .btn[aria-disabled="true"] { background: #9AA7B2; border-color: #9AA7B2; pointer-events: none; }
+  .chips { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 1.2rem; }
+  .chip { padding: .55rem .9rem; background: #fff; color: var(--ink); border: 2px solid var(--line); border-radius: 999px; }
+  .chip[aria-pressed="true"] { background: var(--blue); border-color: var(--blue); color: #fff; }
+  :focus-visible { outline: 3px solid #F2A900; outline-offset: 2px; }
+
+  /* 1 en 5: het getekende huis */
+  .house { width: 100%; height: auto; display: block; }
+  .part { cursor: pointer; }
+  .part .dot { fill: #fff; stroke: var(--blue); stroke-width: 2.5; }
+  .part .plus { stroke: var(--blue); stroke-width: 2.5; stroke-linecap: round; }
+  .part:hover .dot, .part.is-on .dot { fill: var(--blue); }
+  .part:hover .plus, .part.is-on .plus { stroke: #fff; }
+  .part:focus { outline: none; }
+  .part:focus-visible .dot { stroke: #F2A900; stroke-width: 4; }
+  .swatch { width: 2.6rem; height: 2.6rem; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 0 0 2px var(--line); padding: 0; }
+  .swatch[aria-pressed="true"] { box-shadow: 0 0 0 3px var(--blue); }
+
+  /* 2: offerte-hulp */
+  .msg { background: #E7F6E1; border-radius: 10px 10px 10px 2px; padding: .9rem 1rem; white-space: pre-line; min-height: 7rem; }
+
+  /* 3: voor/na-schuif, zelfde opbouw als in de mockups */
+  .cards { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .cards figure { margin: 0; }
+  .cards figcaption { font-weight: 700; padding-top: .5rem; }
+  .ba { position: relative; overflow: hidden; aspect-ratio: 4 / 3; border-radius: 4px; }
+  .ba img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .ba-before { position: absolute; inset: 0; clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+    /* ponytail: zelfde foto met filter als plaatshouder; filter weg zodra er echte voor-foto's zijn */
+    filter: grayscale(.6) sepia(.35) contrast(.85) brightness(.9); }
+  .ba::after { content: ""; position: absolute; top: 0; bottom: 0; left: var(--pos); width: 3px; margin-left: -1.5px; background: #fff; pointer-events: none; }
+  .ba-range { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; touch-action: pan-y; }
+  .ba:has(.ba-range:focus-visible) { outline: 3px solid #F2A900; outline-offset: 2px; }
+
+  /* 4: werkgebied */
+  .pc { font: 700 1.4rem/1 Montserrat, sans-serif; width: 7.5rem; padding: .7rem .8rem; border: 2px solid var(--line); border-radius: 4px; letter-spacing: .08em; }
+  .area { fill: #C9D6E0; stroke: #fff; stroke-width: 3; transition: fill .25s; }
+  .area.is-on { fill: var(--blue); }
+  .area-label { font: 700 13px Montserrat, sans-serif; fill: var(--ink); pointer-events: none; }
+  .area.is-on + .area-label { fill: #fff; }
+  .yes { color: #1E7B3A; font-weight: 700; }
+  .no { color: #9A3B1E; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Vijf interactieve ideeën</h1>
+    <p>Ruwe proefjes om te kiezen wat op de site van ATO Advies &amp; Onderhoud komt. Ze werken, maar tekeningen, teksten en kleuren zijn schetsen.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <span class="nr">Idee 1</span>
+    <h2>Klikbaar huis</h2>
+    <p class="intro">Tik op een plusje. Elk onderdeel van het huis is een dienst. Dit kan de gewone dienstenlijst vervangen.</p>
+    <div class="two">
+      <svg class="house" id="huis" viewBox="0 0 400 300" role="group" aria-label="Huis met aanklikbare onderdelen">
+        <rect x="0" y="278" width="400" height="22" fill="#DFE5EA"/>
+        <rect x="60" y="140" width="280" height="138" fill="#B5694A"/>
+        <g class="part" data-part="gevel" tabindex="0" role="button" aria-label="Gevelbekleding">
+          <polygon points="60,140 200,52 340,140" fill="#3A3D40"/>
+          <circle class="dot" cx="200" cy="108" r="11"/><path class="plus" d="M195 108h10M200 103v10"/>
+        </g>
+        <g class="part" data-part="boeilijst" tabindex="0" role="button" aria-label="Boeilijsten">
+          <polyline points="50,147 200,43 350,147" fill="none" stroke="#F4F1EA" stroke-width="11"/>
+          <circle class="dot" cx="120" cy="98" r="11"/><path class="plus" d="M115 98h10M120 93v10"/>
+        </g>
+        <g class="part" data-part="ramen" tabindex="0" role="button" aria-label="Ramen en deuren">
+          <rect x="85" y="170" width="80" height="66" fill="#F4F1EA"/>
+          <rect x="92" y="177" width="66" height="52" fill="#9FC3DD"/>
+          <rect x="123" y="177" width="4" height="52" fill="#F4F1EA"/>
+          <rect x="178" y="182" width="48" height="96" fill="#1D5A8A"/>
+          <rect x="188" y="192" width="28" height="26" fill="#9FC3DD"/>
+          <circle class="dot" cx="125" cy="203" r="11"/><path class="plus" d="M120 203h10M125 198v10"/>
+        </g>
+        <g class="part" data-part="houtrot" tabindex="0" role="button" aria-label="Houtrotherstel kozijnen">
+          <rect x="245" y="170" width="70" height="66" fill="#F4F1EA"/>
+          <rect x="252" y="177" width="56" height="52" fill="#9FC3DD"/>
+          <polygon points="245,236 245,221 252,225 259,220 267,226 270,236" fill="#7A5A3A"/>
+          <circle class="dot" cx="262" cy="240" r="11"/><path class="plus" d="M257 240h10M262 235v10"/>
+        </g>
+        <g class="part" data-part="sluitwerk" tabindex="0" role="button" aria-label="Hang- en sluitwerk">
+          <circle cx="218" cy="236" r="14" fill="transparent"/>
+          <circle class="dot" cx="218" cy="236" r="11"/><path class="plus" d="M213 236h10M218 231v10"/>
+        </g>
+        <g class="part" data-part="overig" tabindex="0" role="button" aria-label="Overig timmerwerk">
+          <path d="M350 232h7v46h-7zM360 232h7v46h-7zM370 232h7v46h-7zM380 232h7v46h-7zM390 232h7v46h-7z" fill="#A8763E"/>
+          <rect x="348" y="246" width="52" height="5" fill="#8A5F30"/>
+          <circle class="dot" cx="373" cy="262" r="11"/><path class="plus" d="M368 262h10M373 257v10"/>
+        </g>
+      </svg>
+      <div class="panel" id="huis-uitleg" aria-live="polite">
+        <h3>Kies een onderdeel</h3>
+        <p>Tik op een plusje in de tekening.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="nr">Idee 2</span>
+    <h2>Offerte-hulp via WhatsApp</h2>
+    <p class="intro">Drie keer tikken en het bericht staat klaar. De klant hoeft er alleen nog foto's bij te doen.</p>
+    <div class="two">
+      <div id="hulp"></div>
+      <div>
+        <p class="msg" id="hulp-bericht"></p>
+        <a class="btn" id="hulp-link" href="https://wa.me/31621193640" aria-disabled="true">Open WhatsApp</a>
+        <p class="note">Let op: dit opent een echt bericht aan 06-21193640. Het wordt pas verstuurd als je zelf op verzenden drukt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="nr">Idee 3</span>
+    <h2>Voor/na-galerij</h2>
+    <p class="intro">Per project een schuif, met knoppen om op soort werk te kiezen.</p>
+    <div class="chips" id="filter">
+      <button class="chip" aria-pressed="true" data-cat="">Alles</button>
+      <button class="chip" aria-pressed="false" data-cat="kozijnen">Kozijnen</button>
+      <button class="chip" aria-pressed="false" data-cat="gevel">Gevel</button>
+      <button class="chip" aria-pressed="false" data-cat="deuren">Deuren</button>
+    </div>
+    <div class="cards" id="galerij">
+      <figure data-cat="kozijnen">
+        <div class="ba" style="--pos:50%">
+          <img src="fotos/voorna.jpg" alt="Kozijnen na het werk" width="1800" height="1200">
+          <img class="ba-before" src="fotos/voorna.jpg" alt="" aria-hidden="true" width="1800" height="1200">
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Schuif tussen voor en na: kozijnen">
+        </div>
+        <figcaption>Kozijnen hersteld</figcaption>
+      </figure>
+      <figure data-cat="gevel">
+        <div class="ba" style="--pos:50%">
+          <img src="fotos/gevel.jpg" alt="Gevelbekleding na het werk" width="1800" height="1200" loading="lazy">
+          <img class="ba-before" src="fotos/gevel.jpg" alt="" aria-hidden="true" width="1800" height="1200" loading="lazy">
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Schuif tussen voor en na: gevel">
+        </div>
+        <figcaption>Nieuwe gevelbekleding</figcaption>
+      </figure>
+      <figure data-cat="deuren">
+        <div class="ba" style="--pos:50%">
+          <img src="fotos/deur.jpg" alt="Deur na het werk" width="1800" height="1200" loading="lazy">
+          <img class="ba-before" src="fotos/deur.jpg" alt="" aria-hidden="true" width="1800" height="1200" loading="lazy">
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Schuif tussen voor en na: deur">
+        </div>
+        <figcaption>Deur en beslag vervangen</figcaption>
+      </figure>
+    </div>
+    <p class="note">Stockfoto's met een filter als "voor". Met echte foto's van eigen werk wordt dit pas overtuigend.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="nr">Idee 4</span>
+    <h2>Werkgebied met postcodecheck</h2>
+    <p class="intro">De bezoeker vult de vier cijfers van zijn postcode in en ziet meteen of ATO bij hem komt.</p>
+    <div class="two">
+      <svg class="house" viewBox="0 0 400 240" role="img" aria-label="Schets van het werkgebied">
+        <rect width="400" height="240" fill="#EAF1F6"/>
+        <path id="g-voorne" class="area" d="M40 60 Q120 20 215 55 L225 120 Q140 150 55 125 Z"/>
+        <text class="area-label" x="88" y="95">Voorne aan Zee</text>
+        <path id="g-spijkenisse" class="area" d="M240 50 Q310 35 360 70 L350 125 Q290 140 245 118 Z"/>
+        <text class="area-label" x="262" y="92">Spijkenisse</text>
+        <path id="g-ouddorp" class="area" d="M30 170 Q90 150 150 172 L140 215 Q80 228 35 210 Z"/>
+        <text class="area-label" x="62" y="197">Ouddorp</text>
+      </svg>
+      <div>
+        <label for="pc"><strong>Uw postcode (vier cijfers)</strong></label><br>
+        <input class="pc" id="pc" inputmode="numeric" maxlength="4" placeholder="3231" autocomplete="off">
+        <p id="pc-uit" aria-live="polite" style="margin-top:1rem">Probeer 3231, 3207, 3253 of 3011.</p>
+        <p class="note">De kaart is een schets, geen echte kaart. De postcodes zijn een eerste opzet en moeten nog worden nagelopen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="nr">Idee 5</span>
+    <h2>Gevelkleur kiezen</h2>
+    <p class="intro">De bezoeker ziet hoe een andere kleur gevelbekleding op een huis staat.</p>
+    <div class="two">
+      <svg class="house" id="kleurhuis" viewBox="0 0 400 300" role="img" aria-label="Huis met gevelbekleding in de gekozen kleur" style="--gevel:#3A3D40">
+        <defs>
+          <pattern id="planken" width="14" height="14" patternUnits="userSpaceOnUse"><path d="M0 0v14" stroke="#000" stroke-opacity=".18" stroke-width="1.5"/></pattern>
+        </defs>
+        <rect x="0" y="278" width="400" height="22" fill="#DFE5EA"/>
+        <rect x="60" y="140" width="280" height="138" fill="#B5694A"/>
+        <polygon points="60,140 200,52 340,140" style="fill:var(--gevel)"/>
+        <polygon points="60,140 200,52 340,140" fill="url(#planken)"/>
+        <polyline points="50,147 200,43 350,147" fill="none" stroke="#F4F1EA" stroke-width="11"/>
+        <rect x="85" y="170" width="80" height="66" fill="#F4F1EA"/><rect x="92" y="177" width="66" height="52" fill="#9FC3DD"/>
+        <rect x="178" y="182" width="48" height="96" fill="#1D5A8A"/>
+        <rect x="245" y="170" width="70" height="66" fill="#F4F1EA"/><rect x="252" y="177" width="56" height="52" fill="#9FC3DD"/>
+      </svg>
+      <div>
+        <div class="chips" id="kleuren">
+          <button class="swatch" aria-pressed="true" aria-label="Antraciet" data-kleur="#3A3D40" style="background:#3A3D40"></button>
+          <button class="swatch" aria-pressed="false" aria-label="Zwart" data-kleur="#1F1F1F" style="background:#1F1F1F"></button>
+          <button class="swatch" aria-pressed="false" aria-label="Crème" data-kleur="#E9E3D3" style="background:#E9E3D3"></button>
+          <button class="swatch" aria-pressed="false" aria-label="Houtkleur" data-kleur="#A8763E" style="background:#A8763E"></button>
+          <button class="swatch" aria-pressed="false" aria-label="Groen" data-kleur="#4C5B4A" style="background:#4C5B4A"></button>
+        </div>
+        <p><strong id="kleur-naam">Antraciet</strong></p>
+        <p class="note">De kleuren zijn verzonnen voorbeelden, geen echte Trespa-kleuren. Voor het echte werk zijn de materialen van de eigenaar nodig, en liefst een foto van een echt huis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const kies = (groep, knop) => groep.querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", b === knop));
+
+  // 1: klikbaar huis. Teksten komen uit content/nl.json.
+  const ONDERDELEN = {
+    ramen: ["Ramen en deuren vervangen", "Nieuwe ramen, deuren of complete kozijnen, netjes op maat geplaatst."],
+    gevel: ["Gevelbekleding", "Uw gevel opnieuw bekleed met Trespa of multiplex, strak afgewerkt."],
+    boeilijst: ["Boeilijsten vervangen", "Verweerde boeilijsten vervangen, in het materiaal dat bij uw woning past."],
+    houtrot: ["Houtrotherstel kozijnen", "Houtrot in kozijnen vakkundig hersteld, zodat vervangen vaak niet nodig is."],
+    sluitwerk: ["Hang- en sluitwerk", "Nieuwe scharnieren, sloten en deurbeslag, goed afgehangen en sluitend."],
+    overig: ["Overig timmerwerk", "Een andere klus? Bel gerust, we denken graag mee."],
+  };
+  const uitleg = document.getElementById("huis-uitleg");
+  document.querySelectorAll("#huis .part").forEach((part) => {
+    const toon = () => {
+      const [titel, tekst] = ONDERDELEN[part.dataset.part];
+      document.querySelectorAll("#huis .part").forEach((p) => p.classList.toggle("is-on", p === part));
+      uitleg.innerHTML = `<h3></h3><p></p><a class="btn" href="tel:+31621193640">Bel 06-21193640</a>`;
+      uitleg.querySelector("h3").textContent = titel;
+      uitleg.querySelector("p").textContent = tekst;
+    };
+    part.addEventListener("click", toon);
+    part.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toon(); } });
+  });
+
+  // 2: offerte-hulp
+  const STAPPEN = [
+    ["Wat voor klus?", Object.values(ONDERDELEN).map(([titel]) => titel)],
+    ["Waar?", ["Voorne aan Zee", "Spijkenisse", "Ouddorp", "Ergens anders"]],
+    ["Wanneer?", ["Zo snel mogelijk", "Binnen een maand", "Geen haast"]],
+  ];
+  const keuzes = [];
+  const bericht = document.getElementById("hulp-bericht");
+  const link = document.getElementById("hulp-link");
+  const werkBij = () => {
+    const klaar = STAPPEN.every((_, i) => keuzes[i]);
+    const tekst = `Hallo, ik wil graag een vrijblijvende offerte.\nKlus: ${keuzes[0] || "…"}\nPlaats: ${keuzes[1] || "…"}\nWanneer: ${keuzes[2] || "…"}\nIk stuur foto's mee.`;
+    bericht.textContent = tekst;
+    link.setAttribute("aria-disabled", !klaar);
+    link.href = "https://wa.me/31621193640" + (klaar ? "?text=" + encodeURIComponent(tekst) : "");
+  };
+  STAPPEN.forEach(([vraag, opties], i) => {
+    const groep = document.createElement("div");
+    groep.innerHTML = `<h3></h3><div class="chips"></div>`;
+    groep.querySelector("h3").textContent = `${i + 1}. ${vraag}`;
+    opties.forEach((optie) => {
+      const knop = Object.assign(document.createElement("button"), { className: "chip", textContent: optie });
+      knop.setAttribute("aria-pressed", false);
+      knop.addEventListener("click", () => { keuzes[i] = optie; kies(groep, knop); werkBij(); });
+      groep.lastChild.append(knop);
+    });
+    document.getElementById("hulp").append(groep);
+  });
+  werkBij();
+
+  // 3: schuif en filter
+  document.querySelectorAll(".ba-range").forEach((range) =>
+    range.addEventListener("input", () => range.parentElement.style.setProperty("--pos", range.value + "%")));
+  const filter = document.getElementById("filter");
+  filter.addEventListener("click", (e) => {
+    const knop = e.target.closest("button");
+    if (!knop) return;
+    kies(filter, knop);
+    document.querySelectorAll("#galerij figure").forEach((f) => { f.hidden = !!knop.dataset.cat && f.dataset.cat !== knop.dataset.cat; });
+  });
+
+  // 4: postcodecheck. ponytail: eerste opzet van de reeksen; nalopen met de eigenaar voordat dit live gaat.
+  const GEBIEDEN = [
+    ["g-spijkenisse", "Spijkenisse", 3200, 3209],
+    ["g-voorne", "Voorne aan Zee", 3220, 3238],
+    ["g-ouddorp", "Ouddorp", 3253, 3253],
+  ];
+  const zoekGebied = (pc) => GEBIEDEN.find(([, , van, tot]) => pc >= van && pc <= tot);
+  console.assert(zoekGebied(3231)[1] === "Voorne aan Zee" && zoekGebied(3207)[1] === "Spijkenisse" && zoekGebied(3253)[1] === "Ouddorp" && !zoekGebied(3011) && !zoekGebied(3215), "postcodecheck klopt niet");
+  const pcUit = document.getElementById("pc-uit");
+  document.getElementById("pc").addEventListener("input", (e) => {
+    const cijfers = e.target.value.replace(/\D/g, "");
+    e.target.value = cijfers;
+    const gebied = cijfers.length === 4 ? zoekGebied(+cijfers) : null;
+    document.querySelectorAll(".area").forEach((a) => a.classList.toggle("is-on", !!gebied && a.id === gebied[0]));
+    if (cijfers.length < 4) pcUit.textContent = "Vul vier cijfers in.";
+    else if (gebied) pcUit.innerHTML = `<span class="yes">Ja, wij komen in ${gebied[1]}.</span> Bel 06-21193640 voor een afspraak.`;
+    else pcUit.innerHTML = `<span class="no">Dat ligt buiten ons vaste werkgebied.</span> Bel gerust om te overleggen.`;
+  });
+
+  // 5: gevelkleur
+  const kleuren = document.getElementById("kleuren");
+  kleuren.addEventListener("click", (e) => {
+    const knop = e.target.closest("button");
+    if (!knop) return;
+    kies(kleuren, knop);
+    document.getElementById("kleurhuis").style.setProperty("--gevel", knop.dataset.kleur);
+    document.getElementById("kleur-naam").textContent = knop.getAttribute("aria-label");
+  });
+</script>
+</body>
+</html>
