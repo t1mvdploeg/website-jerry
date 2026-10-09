@@ -1,0 +1,1 @@
+Barlow Condensed (700) en DM Sans (400–700), gedownload via Google Fonts. Beide SIL Open Font License. Bronnen: https://github.com/google/fonts/tree/main/ofl/barlowcondensed en https://github.com/google/fonts/tree/main/ofl/dmsans. Lokaal opgeslagen voor offline gebruik.

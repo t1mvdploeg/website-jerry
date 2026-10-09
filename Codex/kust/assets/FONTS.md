@@ -1,0 +1,1 @@
+DM Sans (400–700), gedownload via Google Fonts. SIL Open Font License; volledige licentie in dmsans-OFL.txt. Bron: https://github.com/google/fonts/tree/main/ofl/dmsans. Lokaal opgeslagen voor offline gebruik.

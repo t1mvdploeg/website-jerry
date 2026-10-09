@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-09T14:54:47.009421Z",
+  "title": "Design System: ATO — twee zelfstandige ontwerpwerelden",
+  "extensions": {
+    "colorMeta": {
+      "werkplaats-orange": {
+        "role": "primary",
+        "displayName": "Werkplaats signaaloranje",
+        "tonalRamp": [
+          "oklch(15% 0.17930 40.75)",
+          "oklch(26% 0.17930 40.75)",
+          "oklch(38% 0.17930 40.75)",
+          "oklch(49% 0.17930 40.75)",
+          "oklch(61% 0.17930 40.75)",
+          "oklch(72% 0.17930 40.75)",
+          "oklch(84% 0.17930 40.75)",
+          "oklch(95% 0.17930 40.75)"
+        ]
+      },
+      "werkplaats-ink": {
+        "role": "neutral",
+        "displayName": "Werkplaats houtskool",
+        "tonalRamp": [
+          "oklch(15% 0.00729 67.47)",
+          "oklch(26% 0.00729 67.47)",
+          "oklch(38% 0.00729 67.47)",
+          "oklch(49% 0.00729 67.47)",
+          "oklch(61% 0.00729 67.47)",
+          "oklch(72% 0.00729 67.47)",
+          "oklch(84% 0.00729 67.47)",
+          "oklch(95% 0.00729 67.47)"
+        ]
+      },
+      "werkplaats-paper": {
+        "role": "neutral",
+        "displayName": "Werkplaats koel papier",
+        "tonalRamp": [
+          "oklch(15% 0.00107 197.14)",
+          "oklch(26% 0.00107 197.14)",
+          "oklch(38% 0.00107 197.14)",
+          "oklch(49% 0.00107 197.14)",
+          "oklch(61% 0.00107 197.14)",
+          "oklch(72% 0.00107 197.14)",
+          "oklch(84% 0.00107 197.14)",
+          "oklch(95% 0.00107 197.14)"
+        ]
+      },
+      "werkplaats-muted": {
+        "role": "neutral",
+        "displayName": "Werkplaats gedempte tekst",
+        "tonalRamp": [
+          "oklch(15% 0.01725 57.27)",
+          "oklch(26% 0.01725 57.27)",
+          "oklch(38% 0.01725 57.27)",
+          "oklch(49% 0.01725 57.27)",
+          "oklch(61% 0.01725 57.27)",
+          "oklch(72% 0.01725 57.27)",
+          "oklch(84% 0.01725 57.27)",
+          "oklch(95% 0.01725 57.27)"
+        ]
+      },
+      "werkplaats-line": {
+        "role": "neutral",
+        "displayName": "Werkplaats lijnkleur",
+        "tonalRamp": [
+          "oklch(15% 0.01656 82.79)",
+          "oklch(26% 0.01656 82.79)",
+          "oklch(38% 0.01656 82.79)",
+          "oklch(49% 0.01656 82.79)",
+          "oklch(61% 0.01656 82.79)",
+          "oklch(72% 0.01656 82.79)",
+          "oklch(84% 0.01656 82.79)",
+          "oklch(95% 0.01656 82.79)"
+        ]
+      },
+      "werkplaats-button-hover": {
+        "role": "neutral",
+        "displayName": "Werkplaats warme knophover",
+        "tonalRamp": [
+          "oklch(15% 0.02535 49.58)",
+          "oklch(26% 0.02535 49.58)",
+          "oklch(38% 0.02535 49.58)",
+          "oklch(49% 0.02535 49.58)",
+          "oklch(61% 0.02535 49.58)",
+          "oklch(72% 0.02535 49.58)",
+          "oklch(84% 0.02535 49.58)",
+          "oklch(95% 0.02535 49.58)"
+        ]
+      },
+      "kust-forest": {
+        "role": "primary",
+        "displayName": "Kust bosgroen",
+        "tonalRamp": [
+          "oklch(15% 0.06623 166.55)",
+          "oklch(26% 0.06623 166.55)",
+          "oklch(38% 0.06623 166.55)",
+          "oklch(49% 0.06623 166.55)",
+          "oklch(61% 0.06623 166.55)",
+          "oklch(72% 0.06623 166.55)",
+          "oklch(84% 0.06623 166.55)",
+          "oklch(95% 0.06623 166.55)"
+        ]
+      },
+      "kust-forest-dark": {
+        "role": "primary",
+        "displayName": "Kust diep bosgroen",
+        "tonalRamp": [
+          "oklch(15% 0.05647 167.60)",
+          "oklch(26% 0.05647 167.60)",
+          "oklch(38% 0.05647 167.60)",
+          "oklch(49% 0.05647 167.60)",
+          "oklch(61% 0.05647 167.60)",
+          "oklch(72% 0.05647 167.60)",
+          "oklch(84% 0.05647 167.60)",
+          "oklch(95% 0.05647 167.60)"
+        ]
+      },
+      "kust-mint": {
+        "role": "secondary",
+        "displayName": "Kust zacht mint",
+        "tonalRamp": [
+          "oklch(15% 0.01657 156.90)",
+          "oklch(26% 0.01657 156.90)",
+          "oklch(38% 0.01657 156.90)",
+          "oklch(49% 0.01657 156.90)",
+          "oklch(61% 0.01657 156.90)",
+          "oklch(72% 0.01657 156.90)",
+          "oklch(84% 0.01657 156.90)",
+          "oklch(95% 0.01657 156.90)"
+        ]
+      },
+      "kust-white": {
+        "role": "neutral",
+        "displayName": "Kust bijna-wit",
+        "tonalRamp": [
+          "oklch(15% 0.00536 117.92)",
+          "oklch(26% 0.00536 117.92)",
+          "oklch(38% 0.00536 117.92)",
+          "oklch(49% 0.00536 117.92)",
+          "oklch(61% 0.00536 117.92)",
+          "oklch(72% 0.00536 117.92)",
+          "oklch(84% 0.00536 117.92)",
+          "oklch(95% 0.00536 117.92)"
+        ]
+      },
+      "kust-ink": {
+        "role": "neutral",
+        "displayName": "Kust groene inkt",
+        "tonalRamp": [
+          "oklch(15% 0.04050 167.56)",
+          "oklch(26% 0.04050 167.56)",
+          "oklch(38% 0.04050 167.56)",
+          "oklch(49% 0.04050 167.56)",
+          "oklch(61% 0.04050 167.56)",
+          "oklch(72% 0.04050 167.56)",
+          "oklch(84% 0.04050 167.56)",
+          "oklch(95% 0.04050 167.56)"
+        ]
+      },
+      "kust-muted": {
+        "role": "neutral",
+        "displayName": "Kust gedempt groen",
+        "tonalRamp": [
+          "oklch(15% 0.03714 163.00)",
+          "oklch(26% 0.03714 163.00)",
+          "oklch(38% 0.03714 163.00)",
+          "oklch(49% 0.03714 163.00)",
+          "oklch(61% 0.03714 163.00)",
+          "oklch(72% 0.03714 163.00)",
+          "oklch(84% 0.03714 163.00)",
+          "oklch(95% 0.03714 163.00)"
+        ]
+      },
+      "kust-line": {
+        "role": "neutral",
+        "displayName": "Kust lijnkleur",
+        "tonalRamp": [
+          "oklch(15% 0.02114 156.76)",
+          "oklch(26% 0.02114 156.76)",
+          "oklch(38% 0.02114 156.76)",
+          "oklch(49% 0.02114 156.76)",
+          "oklch(61% 0.02114 156.76)",
+          "oklch(72% 0.02114 156.76)",
+          "oklch(84% 0.02114 156.76)",
+          "oklch(95% 0.02114 156.76)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "werkplaats-display": {
+        "displayName": "Werkplaats Display",
+        "purpose": "Hero only."
+      },
+      "werkplaats-headline": {
+        "displayName": "Werkplaats Headline",
+        "purpose": "Section headings."
+      },
+      "werkplaats-body": {
+        "displayName": "Werkplaats Body",
+        "purpose": "Running text."
+      },
+      "werkplaats-button": {
+        "displayName": "Werkplaats Button",
+        "purpose": "Contact button text."
+      },
+      "kust-display": {
+        "displayName": "Kust Display",
+        "purpose": "Hero only."
+      },
+      "kust-headline": {
+        "displayName": "Kust Headline",
+        "purpose": "Section headings."
+      },
+      "kust-body": {
+        "displayName": "Kust Body",
+        "purpose": "Running text."
+      },
+      "kust-button": {
+        "displayName": "Kust Button",
+        "purpose": "Contact button text."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "state-transition",
+        "value": "200ms",
+        "purpose": "Button background and icon state transitions."
+      },
+      {
+        "name": "photo-settle",
+        "value": "900ms cubic-bezier(.16,1,.3,1)",
+        "purpose": "One-time opening photo animation only when reduced motion is not requested."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "werkplaats-wide-min",
+        "value": "1700px"
+      },
+      {
+        "name": "werkplaats-compact-max",
+        "value": "1000px"
+      },
+      {
+        "name": "werkplaats-mobile-max",
+        "value": "700px"
+      },
+      {
+        "name": "kust-compact-max",
+        "value": "1100px"
+      },
+      {
+        "name": "kust-mobile-max",
+        "value": "780px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Werkplaats — primaire contactknop",
+      "kind": "button",
+      "refersTo": "werkplaats-button",
+      "description": "Rechte WhatsApp-knop op het oranje opening- of contactvlak.",
+      "html": "<a class=\"ds-w-button\" href=\"https://wa.me/31621193640\">Bespreek uw klus <svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 18 18 6M6 6h12v12\"/></svg></a>",
+      "css": ".ds-w-button{display:inline-flex;justify-content:space-between;align-items:center;gap:24px;min-height:54px;padding:15px 21px;background:var(--ink,#211e1b);color:var(--paper,#f2f3f3);font:600 15px/1.6 var(--body,\"DM Sans\",sans-serif);border-radius:0;text-decoration:none;transition:background-color .2s,color .2s}.ds-w-button:hover{background:#473830}.ds-w-button:focus-visible{outline:3px solid var(--ink,#211e1b);outline-offset:5px}.ds-icon{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}"
+    },
+    {
+      "name": "Kust — primaire contactknop",
+      "kind": "button",
+      "refersTo": "kust-button",
+      "description": "Bosgroene WhatsApp-knop op mint of bijna-wit.",
+      "html": "<a class=\"ds-k-button\" href=\"https://wa.me/31621193640\">Vertel over uw klus <svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-k-button{display:inline-flex;justify-content:space-between;align-items:center;gap:26px;min-height:52px;padding:14px 23px;background:var(--forest,#184f3c);color:var(--white,#fcfdf9);font:500 15px/1.65 var(--body,\"DM Sans\",sans-serif);border-radius:6px;text-decoration:none;transition:background-color .2s}.ds-k-button:hover{background:var(--forest-dark,#103e2f)}.ds-k-button:focus-visible{outline:3px solid var(--forest,#184f3c);outline-offset:5px}.ds-icon{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}"
+    },
+    {
+      "name": "Kust — lichte contactknop",
+      "kind": "button",
+      "refersTo": "kust-button-light",
+      "description": "Mintkleurige WhatsApp-knop voor de bosgroene contactsectie.",
+      "html": "<a class=\"ds-k-light\" href=\"https://wa.me/31621193640\">Stuur een WhatsApp <svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-k-light{display:inline-flex;justify-content:space-between;align-items:center;gap:26px;min-height:52px;padding:14px 23px;background:var(--mint,#e4f0e8);color:var(--forest,#184f3c);font:500 15px/1.65 var(--body,\"DM Sans\",sans-serif);border-radius:6px;text-decoration:none;transition:background-color .2s}.ds-k-light:hover{background:var(--white,#fcfdf9)}.ds-k-light:focus-visible{outline:3px solid var(--white,#fcfdf9);outline-offset:5px}.ds-icon{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}"
+    },
+    {
+      "name": "Werkplaats — navigatie",
+      "kind": "nav",
+      "refersTo": "werkplaats-nav",
+      "description": "De drie ankerlinks van de donkere sticky paginanavigatie.",
+      "html": "<nav class=\"ds-w-nav\" aria-label=\"Werkplaats navigatie\"><a href=\"#diensten\">Het werk</a><a href=\"#aanpak\">De aanpak</a><a href=\"#werkgebied\">De regio</a></nav>",
+      "css": ".ds-w-nav{display:flex;flex-wrap:wrap;gap:32px;padding:20px 24px;background:var(--ink,#211e1b);color:var(--paper,#f2f3f3);font:400 14px/1.6 var(--body,\"DM Sans\",sans-serif)}.ds-w-nav a{padding:8px 0;color:inherit;text-decoration:none}.ds-w-nav a:hover{color:var(--orange,#f36c36)}.ds-w-nav a:focus-visible{outline:3px solid currentColor;outline-offset:5px}"
+    },
+    {
+      "name": "Kust — navigatie",
+      "kind": "nav",
+      "refersTo": "kust-nav",
+      "description": "De drie lichte ankerlinks; de paginaheader is niet sticky.",
+      "html": "<nav class=\"ds-k-nav\" aria-label=\"Kust navigatie\"><a href=\"#diensten\">Wat we doen</a><a href=\"#aanpak\">Zo werkt het</a><a href=\"#werkgebied\">In uw buurt</a></nav>",
+      "css": ".ds-k-nav{display:flex;flex-wrap:wrap;gap:32px;color:var(--ink,#203d32);font:400 14px/1.65 var(--body,\"DM Sans\",sans-serif)}.ds-k-nav a{padding:10px 0;color:inherit;text-decoration:none;text-underline-offset:5px}.ds-k-nav a:hover{text-decoration:underline}.ds-k-nav a:focus-visible{outline:3px solid currentColor;outline-offset:5px}"
+    },
+    {
+      "name": "Werkplaats — open dienstenregel",
+      "kind": "custom",
+      "refersTo": "werkplaats-service",
+      "description": "De hele regel opent een gericht WhatsApp-conceptbericht.",
+      "html": "<a class=\"ds-w-service\" href=\"https://wa.me/31621193640?text=Ik%20wil%20graag%20een%20offerte%20voor%20ramen%20of%20deuren.\"><h3>Ramen &amp; deuren</h3><p>Nieuwe ramen, deuren en complete kozijnen. Op maat geplaatst en netjes afgewerkt.</p><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 18 18 6M6 6h12v12\"/></svg></a>",
+      "css": ".ds-w-service{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.15fr) 28px;gap:36px;align-items:center;padding:25px 4px;border-bottom:1px solid var(--line,#cac4b9);color:var(--ink,#211e1b);text-decoration:none;transition:background-color .2s}.ds-w-service h3{margin:0;font:700 36px/1.2 var(--display,\"Barlow Condensed\",sans-serif);text-transform:uppercase;letter-spacing:-.02em}.ds-w-service p{margin:0;max-width:54ch;color:var(--muted,#60564f);font:400 15px/1.6 var(--body,\"DM Sans\",sans-serif)}.ds-w-service:hover{background:#e4e7e5}.ds-w-service:hover h3{color:#a83b11}.ds-w-service:focus-visible{outline:3px solid currentColor;outline-offset:5px}@media(max-width:700px){.ds-w-service{grid-template-columns:1fr 24px;gap:12px;padding:22px 0}.ds-w-service h3{font-size:32px}.ds-w-service p{grid-column:1;font-size:14px}.ds-w-service>.ds-icon{grid-column:2;grid-row:1/3}}.ds-icon{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}"
+    },
+    {
+      "name": "Kust — native diensten-uitklapper",
+      "kind": "custom",
+      "refersTo": "kust-details",
+      "description": "Een details/summary met native bediening; eerste dienst begint open.",
+      "html": "<details class=\"ds-k-details\" open><summary>Ramen &amp; deuren <svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5v14\"/></svg></summary><div><p>Nieuwe ramen, deuren of complete kozijnen, netjes op maat geplaatst en afgewerkt.</p><a href=\"https://wa.me/31621193640?text=Ik%20wil%20graag%20ramen%20of%20deuren%20laten%20vervangen.\">Bespreek deze klus <svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a></div></details>",
+      "css": ".ds-k-details{border-top:1px solid var(--line,#c8d7cd);border-bottom:1px solid var(--line,#c8d7cd);color:var(--ink,#203d32);font-family:var(--body,\"DM Sans\",sans-serif)}.ds-k-details summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:80px;padding:20px 0;font-size:26px;line-height:1.65;letter-spacing:-.025em;font-weight:500}.ds-k-details summary::-webkit-details-marker{display:none}.ds-k-details summary:hover{color:#326b50}.ds-k-details summary:focus-visible{outline:3px solid currentColor;outline-offset:5px}.ds-k-details summary .ds-icon{width:21px;height:21px;transition:transform .2s}.ds-k-details[open] summary .ds-icon{transform:rotate(45deg)}.ds-k-details>div{padding:0 45px 27px 0;font-size:16px;line-height:1.65;color:var(--muted,#4f695c)}.ds-k-details p{margin:0;max-width:53ch}.ds-k-details a{display:inline-flex;align-items:center;gap:14px;margin-top:17px;color:var(--forest,#184f3c);font-size:13px;font-weight:500;text-underline-offset:5px}.ds-k-details a:hover{text-decoration:none}.ds-k-details a:focus-visible{outline:3px solid currentColor;outline-offset:5px}@media(max-width:780px){.ds-k-details summary{min-height:72px;font-size:23px}.ds-k-details>div{font-size:15px;padding-right:20px}}.ds-icon{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}"
+    },
+    {
+      "name": "Werkplaats — vergelijkingsrange",
+      "kind": "input",
+      "refersTo": "werkplaats-range",
+      "description": "Native range met oranje accent; de afbeelding wordt in de pagina via app.js aangepast.",
+      "html": "<label class=\"ds-w-range-label\" for=\"ds-w-range\">Schuif om te vergelijken</label><input class=\"ds-w-range\" id=\"ds-w-range\" type=\"range\" min=\"0\" max=\"100\" value=\"50\">",
+      "css": ".ds-w-range-label{color:var(--paper,#f2f3f3);font:400 13px/1.6 var(--body,\"DM Sans\",sans-serif)}.ds-w-range{accent-color:var(--orange,#f36c36);cursor:ew-resize;min-width:120px;max-width:220px;min-height:32px;margin:0}.ds-w-range:hover{cursor:ew-resize}.ds-w-range:focus-visible{outline:3px solid var(--orange,#f36c36);outline-offset:5px}"
+    },
+    {
+      "name": "Kust — vergelijkingsrange",
+      "kind": "input",
+      "refersTo": "kust-range",
+      "description": "Native range met bosgroen accent; de afbeelding wordt in de pagina via app.js aangepast.",
+      "html": "<label class=\"ds-k-range-label\" for=\"ds-k-range\">Ontdek de voor/na-schuif</label><input class=\"ds-k-range\" id=\"ds-k-range\" type=\"range\" min=\"0\" max=\"100\" value=\"50\">",
+      "css": ".ds-k-range-label{color:var(--ink,#203d32);font:400 13px/1.65 var(--body,\"DM Sans\",sans-serif)}.ds-k-range{accent-color:var(--forest,#184f3c);cursor:ew-resize;min-width:120px;max-width:210px;min-height:32px;margin:0}.ds-k-range:hover{cursor:ew-resize}.ds-k-range:focus-visible{outline:3px solid var(--forest,#184f3c);outline-offset:5px}"
+    },
+    {
+      "name": "Kust — groene intro",
+      "kind": "card",
+      "refersTo": "kust-intro-panel",
+      "description": "Het zachte groene begeleidingsvlak naast de woningfoto.",
+      "html": "<div class=\"ds-k-intro\"><h2>Grote plannen.<br>Kleine klussen.<br>Allebei welkom.</h2><p>Kozijnen, deuren, gevels en onderhoud. We kijken samen wat uw huis nodig heeft.</p><a href=\"#diensten\">Dit kunnen we voor u doen <svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 18 18 6M6 6h12v12\"/></svg></a></div>",
+      "css": ".ds-k-intro{padding:34px;background:var(--forest,#184f3c);color:var(--white,#fcfdf9);border-radius:14px;display:flex;flex-direction:column;align-items:flex-start;font-family:var(--body,\"DM Sans\",sans-serif)}.ds-k-intro h2{margin:0;font-size:35px;font-weight:500;line-height:1.12;letter-spacing:-.03em}.ds-k-intro p{margin:24px 0 0;max-width:30ch;font-size:15px;line-height:1.65}.ds-k-intro a{display:flex;align-items:center;gap:16px;margin-top:24px;color:inherit;font-size:13px;line-height:1.65;text-underline-offset:5px}.ds-k-intro a:hover{text-decoration:none}.ds-k-intro a:focus-visible{outline:3px solid currentColor;outline-offset:5px}.ds-icon{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Werkplaats / Kust — twee afzonderlijke werelden",
+    "overview": "Werkplaats is direct en ambachtelijk: signaaloranje, houtskool, smalle stevige kapitalen en een close-up van handen aan het werk. Rechte hoeken, open dienstenregels en uitgesproken lichte en donkere vlakken bepalen de identiteit. Het ontwerp wijkt visueel af van de bestaande klassieke blauwe en warme sierletter-mockups.\n\nKust is rustig en toegankelijk: bosgroen, zacht mint, luchtige DM Sans-koppen en woningfotografie. Afgeronde fotokaders, een groene intro naast de woningfoto en native diensten-uitklappers richten de aandacht op de vraag van de huiseigenaar. Beide voorstellen zijn bewust zelfstandige alternatieven; er is geen gekozen winnaar of gemengde ATO-huisstijl.",
+    "keyCharacteristics": [
+      "Werkplaats: stevige kapitalen, rechte hoeken, oranje opening en volledig zichtbare diensten.",
+      "Kust: groene toonvlakken, ruime witruimte, zachte fotokaders en native uitklappers.",
+      "Beide: lokale fonts en foto's, directe contactlinks, zichtbare focus en eerlijk gemarkeerd stockbeeld."
+    ],
+    "rules": [
+      {
+        "name": "The Separate Worlds Rule",
+        "body": "Gebruik op een vervolgscherm één volledig palet; meng de oranje Werkplaats-identiteit niet met de zachte Kust-vormen.",
+        "section": "colors"
+      },
+      {
+        "name": "The Type Contrast Rule",
+        "body": "Werkplaats ontleent kracht aan compacte Barlow-kapitalen; Kust aan ruimere DM Sans-zinskoppen. Behoud dit verschil.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "**Do** houd Werkplaats en Kust als zelfstandige alternatieven met hun eigen palet, typografie en vormen.",
+      "**Do** behoud de volledig zichtbare Werkplaats-diensten en de native Kust-uitklappers als afzonderlijke interactiepatronen.",
+      "**Do** gebruik lokale fonts en foto's, zichtbare focus, gekoppelde range-labels en correcte contactlinks.",
+      "**Do** vermeld stockbeeld en de gefilterde vergelijkingsdemo eerlijk; echte projectfoto's volgen later."
+    ],
+    "donts": [
+      "**Don't** behandel één voorstel als winnaar of maak ongemerkt één gemengde huisstijl.",
+      "**Don't** voeg schaduwkaarten toe aan de vlakke secties of vervang open dienstenregels door een kaartrooster.",
+      "**Don't** presenteer de demovergelijking als een echt resultaat of voeg fictieve reviews, garanties of ervaringsjaren toe."
+    ]
+  }
+}

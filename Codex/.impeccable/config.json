@@ -1,0 +1,35 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "werkplaats/index.html"
+        ],
+        "createdAt": "2026-10-09T14:45:38.504Z",
+        "reason": "Agent verified screenshots at 1440 and 390px: assurances has 24–72px horizontal inset; detector cannot resolve var(--gutter)."
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "kust/index.html"
+        ],
+        "createdAt": "2026-10-09T14:45:38.541Z",
+        "reason": "Agent verified screenshots at 1440 and 390px: full-width section backgrounds contain inset wrap children and summary has 20px vertical padding; no flush text."
+      },
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "kust/index.html"
+        ],
+        "createdAt": "2026-10-09T14:45:38.569Z",
+        "reason": "Agent verified: compact display headings and ato wordmark use tight leading intentionally; body paragraphs use 1.65 line-height. This finding applies display leading to body criteria."
+      }
+    ]
+  }
+}

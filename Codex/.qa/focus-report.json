@@ -1,0 +1,56 @@
+[
+  {
+    "variant": "werkplaats",
+    "control": "hero",
+    "focused": true,
+    "outline": "rgb(33, 30, 27)",
+    "width": "3px",
+    "background": "rgb(243, 108, 54)",
+    "contrast": 5.535632525701193
+  },
+  {
+    "variant": "werkplaats",
+    "control": "contact",
+    "focused": true,
+    "outline": "rgb(33, 30, 27)",
+    "width": "3px",
+    "background": "rgb(243, 108, 54)",
+    "contrast": 5.535632525701193
+  },
+  {
+    "variant": "werkplaats",
+    "control": "range",
+    "focused": true,
+    "outline": "rgb(243, 108, 54)",
+    "width": "3px",
+    "background": "rgb(33, 30, 27)",
+    "contrast": 5.535632525701193
+  },
+  {
+    "variant": "kust",
+    "control": "hero",
+    "focused": true,
+    "outline": "rgb(24, 79, 60)",
+    "width": "3px",
+    "background": "rgb(228, 240, 232)",
+    "contrast": 8.066696750603588
+  },
+  {
+    "variant": "kust",
+    "control": "contact",
+    "focused": true,
+    "outline": "rgb(252, 253, 249)",
+    "width": "3px",
+    "background": "rgb(24, 79, 60)",
+    "contrast": 9.249628314772211
+  },
+  {
+    "variant": "kust",
+    "control": "range",
+    "focused": true,
+    "outline": "rgb(24, 79, 60)",
+    "width": "3px",
+    "background": "rgb(237, 242, 235)",
+    "contrast": 8.324660202447228
+  }
+]
