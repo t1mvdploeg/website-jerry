@@ -1,3 +1,8 @@
+/* Lettertypes staan in fonts/, zodat de pagina niets bij Google ophaalt. Licenties: fonts/FONTS.md. */
+@font-face { font-family: "Lato"; font-weight: 400; font-display: swap; src: url("fonts/lato-400.woff2") format("woff2"); }
+@font-face { font-family: "Lato"; font-weight: 700; font-display: swap; src: url("fonts/lato-700.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-weight: 600 700; font-display: swap; src: url("fonts/montserrat.woff2") format("woff2"); }
+
 :root {
   --blue: #1D5A8A;
   --blue-dark: #154568;
