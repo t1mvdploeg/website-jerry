@@ -5,6 +5,8 @@ Open `index.html` in de browser om beide richtingen te vergelijken.
 - **Werkplaats** (`werkplaats/index.html`): oranje, zwart, compacte typografie en een lijst van werkzaamheden. Elke werkzaamheid opent WhatsApp met een passend conceptbericht.
 - **Kust** (`kust/index.html`): frisgroen, ruime typografie, woningfotografie en uitklapbare werkzaamheden.
 
+Beide hebben in het contactblok een offerte-hulp: de bezoeker kiest klus, plaats en moment, en de WhatsApp-knop opent met een bericht waarin die keuzes al staan. Zonder JavaScript blijft de hulp verborgen en werkt de knop als gewone WhatsApp-link.
+
 Beide zijn zelfstandige HTML/CSS-mockups. Elke map bevat eigen foto’s, lettertypes en een klein script voor de voor/na-schuif. Ze werken zonder installatie, bouwstap of internetverbinding. Bellen, WhatsApp en mail gebruiken de bijbehorende apps en verbinding.
 
 De contactgegevens en de zes diensten komen uit `../whatsapp.md` en `../content/nl.json`. Stockfoto’s zijn op de pagina’s gemarkeerd en hebben bronvermeldingen in `assets/BRONNEN.md`. De voor/na-schuif gebruikt dezelfde stockfoto met een filter en is een technische demonstratie. Echte projectfoto’s moeten nog worden aangeleverd.

@@ -22,20 +22,50 @@
     "whatsapp": "Stuur een WhatsApp"
   },
   "trust": {
-    "t1": { "title": "Gediplomeerd en verzekerd", "text": "Vakwerk van een gediplomeerd timmerman, volledig verzekerd." },
-    "t2": { "title": "Snelle service", "text": "Korte lijnen en snel een afspraak." },
-    "t3": { "title": "Vrijblijvende offerte", "text": "U weet vooraf waar u aan toe bent." },
-    "t4": { "title": "Lokaal", "text": "Voorne aan Zee, Spijkenisse en Ouddorp." }
+    "t1": {
+      "title": "Gediplomeerd en verzekerd",
+      "text": "Vakwerk van een gediplomeerd timmerman, volledig verzekerd."
+    },
+    "t2": {
+      "title": "Snelle service",
+      "text": "Korte lijnen en snel een afspraak."
+    },
+    "t3": {
+      "title": "Vrijblijvende offerte",
+      "text": "U weet vooraf waar u aan toe bent."
+    },
+    "t4": {
+      "title": "Lokaal",
+      "text": "Voorne aan Zee, Spijkenisse en Ouddorp."
+    }
   },
   "services": {
     "title": "Wat wij doen",
     "lead": "Timmerwerk aan en om het huis, groot en klein.",
-    "s1": { "title": "Ramen en deuren vervangen", "text": "Nieuwe ramen, deuren of complete kozijnen, netjes op maat geplaatst." },
-    "s2": { "title": "Gevelbekleding", "text": "Uw gevel opnieuw bekleed met Trespa of multiplex, strak afgewerkt." },
-    "s3": { "title": "Boeilijsten vervangen", "text": "Verweerde boeilijsten vervangen, in het materiaal dat bij uw woning past." },
-    "s4": { "title": "Houtrotherstel kozijnen", "text": "Houtrot in kozijnen vakkundig hersteld, zodat vervangen vaak niet nodig is." },
-    "s5": { "title": "Hang- en sluitwerk", "text": "Nieuwe scharnieren, sloten en deurbeslag, goed afgehangen en sluitend." },
-    "s6": { "title": "Overig timmerwerk", "text": "Een andere klus? Bel gerust, we denken graag mee." }
+    "s1": {
+      "title": "Ramen en deuren vervangen",
+      "text": "Nieuwe ramen, deuren of complete kozijnen, netjes op maat geplaatst."
+    },
+    "s2": {
+      "title": "Gevelbekleding",
+      "text": "Uw gevel opnieuw bekleed met Trespa of multiplex, strak afgewerkt."
+    },
+    "s3": {
+      "title": "Boeilijsten vervangen",
+      "text": "Verweerde boeilijsten vervangen, in het materiaal dat bij uw woning past."
+    },
+    "s4": {
+      "title": "Houtrotherstel kozijnen",
+      "text": "Houtrot in kozijnen vakkundig hersteld, zodat vervangen vaak niet nodig is."
+    },
+    "s5": {
+      "title": "Hang- en sluitwerk",
+      "text": "Nieuwe scharnieren, sloten en deurbeslag, goed afgehangen en sluitend."
+    },
+    "s6": {
+      "title": "Overig timmerwerk",
+      "text": "Een andere klus? Bel gerust, we denken graag mee."
+    }
   },
   "beforeafter": {
     "title": "Voor en na",
@@ -69,5 +99,14 @@
   "footer": {
     "kvk": "KvK 24486625",
     "area": "Voorne aan Zee · Spijkenisse · Ouddorp"
+  },
+  "offerte": {
+    "klus": "1. Wat voor klus?",
+    "plaats": "2. Waar?",
+    "wanneer": "3. Wanneer?",
+    "anders": "Ergens anders",
+    "w1": "Zo snel mogelijk",
+    "w2": "Binnen een maand",
+    "w3": "Geen haast"
   }
 }
