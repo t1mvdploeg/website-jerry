@@ -23,3 +23,28 @@ document.querySelectorAll('[data-offerte]').forEach((helper) => {
   helper.addEventListener('change', update);
   update();
 });
+
+document.querySelectorAll('[data-werk-stappen]').forEach((steps) => {
+  const photo = steps.parentElement.querySelector('[data-werk-img]');
+  steps.hidden = false;
+  steps.addEventListener('click', (event) => {
+    const button = event.target.closest('button');
+    if (!button || button.getAttribute('aria-pressed') === 'true') return;
+    steps.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', b === button));
+    photo.classList.add('is-wissel');
+    photo.onload = photo.onerror = () => photo.classList.remove('is-wissel');
+    photo.src = button.dataset.src;
+    photo.alt = button.dataset.alt;
+  });
+});
+
+document.querySelectorAll('[data-werk-filter]').forEach((filter) => {
+  const jobs = filter.parentElement.querySelectorAll('.werk');
+  filter.hidden = false;
+  filter.addEventListener('click', (event) => {
+    const button = event.target.closest('button');
+    if (!button) return;
+    filter.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', b === button));
+    jobs.forEach((job) => { job.hidden = Boolean(button.dataset.dienst) && job.dataset.dienst !== button.dataset.dienst; });
+  });
+});

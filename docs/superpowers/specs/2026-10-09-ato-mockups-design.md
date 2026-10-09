@@ -91,6 +91,13 @@ In de mockups staat de tekst nog gewoon in de HTML. Elk stuk tekst dat later aan
 - De voor/na-galerij (idee 3) alleen als Melvins vader echte voor- en na-foto's van hetzelfde werk heeft. Zonder zulke paren wordt het een gewone projectgalerij.
 - Postcodecheck (idee 4) en gevelkleur kiezen (idee 5) zijn niet gekozen.
 
+## Echte foto's (9 oktober 2026)
+
+- De 83 aangeleverde foto's zijn de enige; zie `docs/foto-inventaris.md`. De stockfoto's zijn uit klassiek, kust en werkplaats gehaald.
+- `tools/fotos-exporteren.py` maakt de uitsneden (zonder opnamegegevens, huisnummers buiten beeld of onleesbaar). `tools/projecten-bouwen.py` zet het projectenoverzicht met negen klussen in de drie ontwerpen, vanuit één lijst.
+- De schuif toont de kozijnhoek met houtrot, voor en na. Die foto's zijn schermafbeeldingen en daardoor minder scherp; met de originelen wordt dat beter.
+- In het projectenoverzicht wisselt de bezoeker per klus tussen voor, tijdens en na, en filtert op soort werk.
+
 ## Buiten dit ontwerp
 
 - Losse pagina's (diensten, projecten, over ons, contact).

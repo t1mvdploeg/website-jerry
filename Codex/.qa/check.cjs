@@ -91,6 +91,15 @@ const report = [];
         assert.match(quoteHref, /text=Hallo.*\nKlus: Houtrotherstel\nPlaats: Spijkenisse\nIk stuur/, `${variant}/${width}: WhatsApp-bericht klopt niet`);
         assert.match(await quote.locator('[data-offerte-bericht]').textContent(), /Plaats: Spijkenisse/);
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), width, `${variant}/${width}: overflow na keuze in offerte-hulp`);
+        const firstJob = page.locator('.werk').first();
+        const jobPhoto = firstJob.locator('[data-werk-img]');
+        const resultSrc = await jobPhoto.getAttribute('src');
+        await firstJob.locator('[data-werk-stappen] button').first().click();
+        assert.notEqual(await jobPhoto.getAttribute('src'), resultSrc, `${variant}/${width}: projectfoto wisselt niet`);
+        await page.waitForFunction(() => { const img = document.querySelector('[data-werk-img]'); return img.complete && img.naturalWidth > 0; });
+        await page.locator('[data-werk-filter] button[data-dienst="houtrot"]').click();
+        assert.equal(await page.locator('.werk:visible').count(), 2, `${variant}/${width}: filter op houtrot`);
+        assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), width, `${variant}/${width}: overflow in projectenoverzicht`);
         report.push({ variant, width, ...layout, interaction: 'OK', errors });
         await page.close();
       }

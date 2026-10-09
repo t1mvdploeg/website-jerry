@@ -90,7 +90,7 @@ def check(version, content):
 def main():
     content = dict(flatten(json.loads((ROOT / "content" / "nl.json").read_text(encoding="utf-8"))))
     failed = False
-    for version in sys.argv[1:] or ["klassiek", "modern"]:
+    for version in sys.argv[1:] or ["klassiek"]:
         errors = check(version, content)
         failed = failed or bool(errors)
         print(f"{version}: {'OK' if not errors else f'{len(errors)} fout(en)'}")

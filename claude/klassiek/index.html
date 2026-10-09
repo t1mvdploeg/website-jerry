@@ -20,6 +20,7 @@
     <nav class="nav" aria-label="Hoofdmenu">
       <a href="#diensten" data-i18n="nav.services">Diensten</a>
       <a href="#voor-na" data-i18n="nav.beforeafter">Voor en na</a>
+      <a href="#projecten" data-i18n="nav.projects">Projecten</a>
       <a href="#werkgebied" data-i18n="nav.area">Werkgebied</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
@@ -29,7 +30,7 @@
 
 <main>
 <section class="hero">
-  <img class="hero-img" src="fotos/tijdelijk/hero.jpg" alt="Nederlandse woning met baksteen en witte ramen" width="1800" height="1200">
+  <img class="hero-img" src="fotos/rij-kozijnen.jpg" alt="Nieuwe kozijnen in een gevel van donkere baksteen" width="1800" height="1200">
   <div class="wrap hero-in">
     <p class="kicker" data-i18n="hero.kicker">Timmerwerken in Voorne aan Zee</p>
     <h1 data-i18n="hero.title">Vakkundig timmerwerk aan uw woning</h1>
@@ -78,7 +79,7 @@
         <li><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span data-i18n="why.p3">Altijd een vrijblijvende offerte</span></li>
       </ul>
     </div>
-    <img class="photo" src="fotos/tijdelijk/timmerman.jpg" alt="Handen van een timmerman die een lijn aftekent op een plank" width="1800" height="1200" loading="lazy">
+    <img class="photo" src="fotos/herstel-hoek.jpg" alt="Nieuw hout ingezet in de hoek van een houten gevel" width="1600" height="1200" loading="lazy">
   </div>
 </section>
 
@@ -89,17 +90,39 @@
       <p class="sub" data-i18n="beforeafter.lead">Schuif over de foto om het verschil te zien.</p>
     </div>
     <figure class="ba" style="--pos:50%">
-      <img class="ba-after" src="fotos/tijdelijk/voorna.jpg" alt="Kozijn na het werk" width="1800" height="1200" loading="lazy">
-      <img class="ba-before" src="fotos/tijdelijk/voorna.jpg" alt="" aria-hidden="true" width="1800" height="1200" loading="lazy">
+      <img class="ba-after" src="fotos/kozijnhoek-na-breed.jpg" alt="Kozijnhoek na het herstel, geschilderd" width="1200" height="900" loading="lazy">
+      <img class="ba-before" src="fotos/kozijnhoek-voor-breed.jpg" alt="" aria-hidden="true" width="1200" height="900" loading="lazy">
       <span class="ba-label ba-label-before" data-i18n="beforeafter.before">Voor</span>
       <span class="ba-label ba-label-after" data-i18n="beforeafter.after">Na</span>
       <span class="ba-knob" aria-hidden="true"><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M104,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0Zm64,0V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0Z" opacity="0"/><path d="M96.8,181.6l-48-48a8,8,0,0,1,0-11.2l48-48a8,8,0,0,1,11.4,11.2L70.6,128l37.6,37.6a8,8,0,0,1-11.4,16Zm62.4,0a8,8,0,0,1,0-11.2L196.8,128l-37.6-37.6a8,8,0,0,1,11.4-11.2l48,48a8,8,0,0,1,0,11.2l-48,48A8,8,0,0,1,159.2,181.6Z"/></svg></span>
       <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Schuif tussen voor en na">
     </figure>
-    <p class="note" data-i18n="beforeafter.note">Voorbeeldfoto. Foto's van eigen werk volgen.</p>
+    <p class="note" data-i18n="beforeafter.note">Houtrot in een kozijnhoek: hersteld en opnieuw geschilderd.</p>
   </div>
 </section>
 
+<!-- projecten:start -->
+<section class="sec" id="projecten">
+  <div class="wrap">
+    <div class="head">
+      <h2 data-i18n="projects.title">Recent werk</h2>
+      <p class="sub" data-i18n="projects.lead">Kies per klus tussen voor, tijdens en na.</p>
+    </div>
+<div class="werk-filter" data-werk-filter role="group" aria-label="Filter op soort werk" hidden><button type="button" aria-pressed="true" data-dienst="" data-i18n="projects.all">Alles</button><button type="button" aria-pressed="false" data-dienst="houtrot" data-i18n="projects.d.houtrot">Houtrotherstel</button><button type="button" aria-pressed="false" data-dienst="boeilijsten" data-i18n="projects.d.boeilijsten">Boeilijsten</button><button type="button" aria-pressed="false" data-dienst="ramen" data-i18n="projects.d.ramen">Ramen en deuren</button><button type="button" aria-pressed="false" data-dienst="gevel" data-i18n="projects.d.gevel">Gevelbekleding</button><button type="button" aria-pressed="false" data-dienst="sluitwerk" data-i18n="projects.d.sluitwerk">Hang- en sluitwerk</button><button type="button" aria-pressed="false" data-dienst="overig" data-i18n="projects.d.overig">Overig timmerwerk</button></div>
+<ul class="werk-lijst">
+<li class="werk" data-dienst="boeilijsten"><div class="werk-beeld"><img src="fotos/projecten/schuur-na.jpg" alt="Schuur met nieuwe witte windveren" width="800" height="800" loading="lazy" data-werk-img><div class="werk-stappen" data-werk-stappen role="group" aria-label="Kies een foto van deze klus" hidden><button type="button" aria-pressed="false" data-src="fotos/projecten/schuur-voor.jpg" data-alt="Schuur met verweerde dakrand" data-i18n="projects.step.voor">Voor</button><button type="button" aria-pressed="false" data-src="fotos/projecten/schuur-tijdens.jpg" data-alt="Dakrand met nieuwe latten en folie" data-i18n="projects.step.tijdens">Tijdens</button><button type="button" aria-pressed="true" data-src="fotos/projecten/schuur-na.jpg" data-alt="Schuur met nieuwe witte windveren" data-i18n="projects.step.na">Na</button></div></div><div class="werk-tekst"><h3 data-i18n="projects.p.schuur">Schuur met nieuwe dakrand</h3><p data-i18n="projects.d.boeilijsten">Boeilijsten</p></div></li>
+<li class="werk" data-dienst="houtrot"><div class="werk-beeld"><img src="fotos/projecten/stijl-na.jpg" alt="Stijl hersteld en geschilderd" width="800" height="800" loading="lazy" data-werk-img><div class="werk-stappen" data-werk-stappen role="group" aria-label="Kies een foto van deze klus" hidden><button type="button" aria-pressed="false" data-src="fotos/projecten/stijl-voor.jpg" data-alt="Verrotte stijl naast een raam" data-i18n="projects.step.voor">Voor</button><button type="button" aria-pressed="false" data-src="fotos/projecten/stijl-tijdens.jpg" data-alt="Nieuw hout ingezet naast het raam" data-i18n="projects.step.tijdens">Tijdens</button><button type="button" aria-pressed="true" data-src="fotos/projecten/stijl-na.jpg" data-alt="Stijl hersteld en geschilderd" data-i18n="projects.step.na">Na</button></div></div><div class="werk-tekst"><h3 data-i18n="projects.p.stijl">Houtrot naast een raam</h3><p data-i18n="projects.d.houtrot">Houtrotherstel</p></div></li>
+<li class="werk" data-dienst="ramen"><div class="werk-beeld"><img src="fotos/projecten/kozijnen-na.jpg" alt="Nieuw kozijn met roedeverdeling in donkere baksteen" width="800" height="800" loading="lazy" data-werk-img><div class="werk-stappen" data-werk-stappen role="group" aria-label="Kies een foto van deze klus" hidden><button type="button" aria-pressed="false" data-src="fotos/projecten/kozijnen-tijdens.jpg" data-alt="Oud kozijn uit de gevel gehaald" data-i18n="projects.step.tijdens">Tijdens</button><button type="button" aria-pressed="true" data-src="fotos/projecten/kozijnen-na.jpg" data-alt="Nieuw kozijn met roedeverdeling in donkere baksteen" data-i18n="projects.step.na">Na</button></div></div><div class="werk-tekst"><h3 data-i18n="projects.p.kozijnen">Nieuwe kozijnen</h3><p data-i18n="projects.d.ramen">Ramen en deuren</p></div></li>
+<li class="werk" data-dienst="gevel"><div class="werk-beeld"><img src="fotos/projecten/topgevel-na.jpg" alt="Topgevel bekleed met zwart hout" width="800" height="800" loading="lazy" data-werk-img><div class="werk-stappen" data-werk-stappen role="group" aria-label="Kies een foto van deze klus" hidden><button type="button" aria-pressed="false" data-src="fotos/projecten/topgevel-tijdens.jpg" data-alt="Topgevel met folie en regelwerk" data-i18n="projects.step.tijdens">Tijdens</button><button type="button" aria-pressed="true" data-src="fotos/projecten/topgevel-na.jpg" data-alt="Topgevel bekleed met zwart hout" data-i18n="projects.step.na">Na</button></div></div><div class="werk-tekst"><h3 data-i18n="projects.p.topgevel">Topgevel in zwart hout</h3><p data-i18n="projects.d.gevel">Gevelbekleding</p></div></li>
+<li class="werk" data-dienst="sluitwerk"><div class="werk-beeld"><img src="fotos/projecten/achterdeur-na.jpg" alt="Achterdeur met veiligheidsslot" width="800" height="800" loading="lazy" data-werk-img><div class="werk-stappen" data-werk-stappen role="group" aria-label="Kies een foto van deze klus" hidden><button type="button" aria-pressed="false" data-src="fotos/projecten/achterdeur-tijdens.jpg" data-alt="Nieuwe achterdeur, nog zonder sluitwerk" data-i18n="projects.step.tijdens">Tijdens</button><button type="button" aria-pressed="true" data-src="fotos/projecten/achterdeur-na.jpg" data-alt="Achterdeur met veiligheidsslot" data-i18n="projects.step.na">Na</button></div></div><div class="werk-tekst"><h3 data-i18n="projects.p.achterdeur">Achterdeur met veiligheidsslot</h3><p data-i18n="projects.d.sluitwerk">Hang- en sluitwerk</p></div></li>
+<li class="werk" data-dienst="boeilijsten"><div class="werk-beeld"><img src="fotos/projecten/luifel-na.jpg" alt="Luifel met nieuwe witte bekleding" width="800" height="800" loading="lazy" data-werk-img><div class="werk-stappen" data-werk-stappen role="group" aria-label="Kies een foto van deze klus" hidden><button type="button" aria-pressed="false" data-src="fotos/projecten/luifel-voor.jpg" data-alt="Luifel met open onderkant" data-i18n="projects.step.voor">Voor</button><button type="button" aria-pressed="true" data-src="fotos/projecten/luifel-na.jpg" data-alt="Luifel met nieuwe witte bekleding" data-i18n="projects.step.na">Na</button></div></div><div class="werk-tekst"><h3 data-i18n="projects.p.luifel">Luifel boven de voordeur</h3><p data-i18n="projects.d.boeilijsten">Boeilijsten</p></div></li>
+<li class="werk" data-dienst="houtrot"><div class="werk-beeld"><img src="fotos/projecten/dorpel-na.jpg" alt="Onderdorpel hersteld en geschilderd" width="800" height="800" loading="lazy" data-werk-img><div class="werk-stappen" data-werk-stappen role="group" aria-label="Kies een foto van deze klus" hidden><button type="button" aria-pressed="false" data-src="fotos/projecten/dorpel-tijdens.jpg" data-alt="Onderdorpel van een deur tijdens het herstel" data-i18n="projects.step.tijdens">Tijdens</button><button type="button" aria-pressed="true" data-src="fotos/projecten/dorpel-na.jpg" data-alt="Onderdorpel hersteld en geschilderd" data-i18n="projects.step.na">Na</button></div></div><div class="werk-tekst"><h3 data-i18n="projects.p.dorpel">Onderdorpel van een deur</h3><p data-i18n="projects.d.houtrot">Houtrotherstel</p></div></li>
+<li class="werk" data-dienst="overig"><div class="werk-beeld"><img src="fotos/projecten/zolder-na.jpg" alt="Afgewerkte wand met deuren" width="800" height="800" loading="lazy" data-werk-img><div class="werk-stappen" data-werk-stappen role="group" aria-label="Kies een foto van deze klus" hidden><button type="button" aria-pressed="false" data-src="fotos/projecten/zolder-voor.jpg" data-alt="Zolder met open installatie" data-i18n="projects.step.voor">Voor</button><button type="button" aria-pressed="false" data-src="fotos/projecten/zolder-tijdens.jpg" data-alt="Houten wand rond de installatie" data-i18n="projects.step.tijdens">Tijdens</button><button type="button" aria-pressed="true" data-src="fotos/projecten/zolder-na.jpg" data-alt="Afgewerkte wand met deuren" data-i18n="projects.step.na">Na</button></div></div><div class="werk-tekst"><h3 data-i18n="projects.p.zolder">Installatie op zolder weggewerkt</h3><p data-i18n="projects.d.overig">Overig timmerwerk</p></div></li>
+<li class="werk" data-dienst="overig"><div class="werk-beeld"><img src="fotos/projecten/kantoor-na.jpg" alt="Afgewerkte wand met deur" width="800" height="800" loading="lazy" data-werk-img><div class="werk-stappen" data-werk-stappen role="group" aria-label="Kies een foto van deze klus" hidden><button type="button" aria-pressed="false" data-src="fotos/projecten/kantoor-voor.jpg" data-alt="Open kantoorruimte" data-i18n="projects.step.voor">Voor</button><button type="button" aria-pressed="false" data-src="fotos/projecten/kantoor-tijdens.jpg" data-alt="Metalen frame van de wand" data-i18n="projects.step.tijdens">Tijdens</button><button type="button" aria-pressed="true" data-src="fotos/projecten/kantoor-na.jpg" data-alt="Afgewerkte wand met deur" data-i18n="projects.step.na">Na</button></div></div><div class="werk-tekst"><h3 data-i18n="projects.p.kantoor">Scheidingswand in een kantoor</h3><p data-i18n="projects.d.overig">Overig timmerwerk</p></div></li>
+</ul>
+  </div>
+</section>
+<!-- projecten:end -->
 <section class="sec sec-alt" id="werkgebied">
   <div class="wrap area">
     <div>
@@ -174,6 +197,32 @@
     hulp.hidden = false;
     hulp.addEventListener("change", werkBij);
     werkBij();
+  });
+
+  // Projecten: per klus wisselen tussen voor, tijdens en na, en filteren op soort werk.
+  // Zonder script blijven de knoppen verborgen en staat bij elke klus de na-foto.
+  document.querySelectorAll("[data-werk-stappen]").forEach((stappen) => {
+    const foto = stappen.parentElement.querySelector("[data-werk-img]");
+    stappen.hidden = false;
+    stappen.addEventListener("click", (e) => {
+      const knop = e.target.closest("button");
+      if (!knop || knop.getAttribute("aria-pressed") === "true") return;
+      stappen.querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", b === knop));
+      foto.classList.add("is-wissel");
+      foto.onload = foto.onerror = () => foto.classList.remove("is-wissel");
+      foto.src = knop.dataset.src;
+      foto.alt = knop.dataset.alt;
+    });
+  });
+  document.querySelectorAll("[data-werk-filter]").forEach((filter) => {
+    const klussen = filter.parentElement.querySelectorAll(".werk");
+    filter.hidden = false;
+    filter.addEventListener("click", (e) => {
+      const knop = e.target.closest("button");
+      if (!knop) return;
+      filter.querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", b === knop));
+      klussen.forEach((k) => { k.hidden = !!knop.dataset.dienst && k.dataset.dienst !== knop.dataset.dienst; });
+    });
   });
 </script>
 </body>
