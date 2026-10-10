@@ -1,10 +1,10 @@
 # Handoff — website ATO Advies & Onderhoud
 
-Website voor de vader van Melvin (timmerbedrijf, Voorne aan Zee). Laatst bijgewerkt: 9 oktober 2026.
+Website voor de vader van Melvin (timmerbedrijf, Voorne aan Zee). Laatst bijgewerkt: 10 oktober 2026.
 
 ## Stand
 
-Er liggen drie ontwerpen voor de homepage waaruit Melvins vader moet kiezen. Open `index.html` in de hoofdmap voor de links.
+Er liggen drie ontwerpen voor de homepage waaruit Melvins vader moet kiezen. Open `index.html` in de hoofdmap: een keuzepagina voor de klant met van elk ontwerp een levend voorbeeld en een knop naar het hele ontwerp.
 
 | Ontwerp | Map | Gemaakt door |
 | --- | --- | --- |

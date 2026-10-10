@@ -4,43 +4,54 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Mockups ATO Advies & Onderhoud</title>
+<title>Ontwerpen ATO Advies & Onderhoud</title>
 <style>
-  /* Startpagina om de mockups naast elkaar te openen. Geen onderdeel van de site zelf. */
+  /* Keuzepagina voor de klant: drie ontwerpen met een levend voorbeeld. Geen onderdeel van de site zelf. */
   body { margin: 0; font: 400 1.05rem/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; color: #2B2F33; background: #F3F6F9; }
-  main { max-width: 760px; margin: 0 auto; padding: 2.5rem 20px 4rem; }
-  h1 { font-size: clamp(1.6rem, 4vw, 2.1rem); line-height: 1.2; margin: 0 0 .5rem; }
-  h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: .08em; color: #555C63; margin: 2.2rem 0 .8rem; }
-  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .8rem; }
-  a.kaart { display: block; padding: 1.1rem 1.25rem; background: #fff; border: 1px solid #DCE3EA; border-left: 4px solid #1D5A8A; border-radius: 6px; color: inherit; text-decoration: none; }
-  a.kaart:hover { border-color: #1D5A8A; }
-  a.kaart strong { display: block; font-size: 1.15rem; color: #1D5A8A; }
-  a.kaart.af { border-left-color: #A9B4BE; }
-  a.kaart.af strong { color: #555C63; }
+  main { max-width: 1180px; margin: 0 auto; padding: 3rem 20px 4rem; }
+  h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.15; margin: 0 0 .6rem; }
+  .intro { max-width: 40rem; margin: 0 0 2.5rem; color: #555C63; }
+  .ontwerpen { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+  .kaart { display: flex; flex-direction: column; background: #fff; border: 1px solid #DCE3EA; border-radius: 10px; overflow: hidden; }
+  /* De pagina draait op 1280 px breed en wordt met script verkleind tot de kaartbreedte. */
+  .voorbeeld { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #E6ECF1; border-bottom: 1px solid #DCE3EA; }
+  .voorbeeld iframe { position: absolute; top: 0; left: 0; width: 1280px; height: 800px; border: 0; transform-origin: 0 0; pointer-events: none; }
+  .tekst { padding: 1.25rem 1.4rem 1.5rem; display: flex; flex-direction: column; gap: .4rem; flex: 1; }
+  .tekst h2 { margin: 0; font-size: 1.4rem; }
+  .tekst p { margin: 0 0 .8rem; color: #555C63; }
+  .knop { margin-top: auto; align-self: flex-start; padding: .7rem 1.2rem; border-radius: 6px; background: var(--kleur); color: #fff; font-weight: 700; text-decoration: none; }
+  .knop:hover { filter: brightness(.9); }
   :focus-visible { outline: 3px solid #F2B134; outline-offset: 3px; }
 </style>
 </head>
 <body>
 <main>
-  <h1>Mockups ATO Advies &amp; Onderhoud</h1>
-  <p>Drie ontwerpen voor de homepage om uit te kiezen. De foto's zijn eigen werk van ATO; de teksten zijn nog voorlopig.</p>
+  <h1>Kies uw ontwerp</h1>
+  <p class="intro">Hieronder staan drie ontwerpen voor de nieuwe website van ATO Advies &amp; Onderhoud. Klik op een ontwerp om het helemaal te bekijken, met uw eigen foto's. De teksten zijn nog voorlopig.</p>
 
-  <h2>Ontwerpen</h2>
-  <ul>
-    <li><a class="kaart" href="claude/klassiek/index.html"><strong>Klassiek</strong>Blauw en rustig, met de opbouw van de voorbeeldsite.</a></li>
-    <li><a class="kaart" href="Codex/werkplaats/index.html"><strong>Werkplaats</strong>Oranje en zwart, stoer en compact.</a></li>
-    <li><a class="kaart" href="Codex/kust/index.html"><strong>Kust</strong>Frisgroen en ruim, met grote foto's.</a></li>
-  </ul>
-
-  <h2>Losse onderdelen</h2>
-  <ul>
-    <li><a class="kaart" href="claude/ideeen/index.html"><strong>Vijf interactieve ideeën</strong>Ruwe proefjes: klikbaar huis, offerte-hulp, voor/na-galerij, postcodecheck en gevelkleur.</a></li>
-  </ul>
-
-  <h2>Afgevallen</h2>
-  <ul>
-    <li><a class="kaart af" href="claude/modern/index.html"><strong>Modern</strong>Warm wit en donkerbruin met sierlijke koppen.</a></li>
-  </ul>
+  <div class="ontwerpen">
+    <article class="kaart" style="--kleur:#1D5A8A">
+      <div class="voorbeeld"><iframe src="claude/klassiek/index.html" title="Voorbeeld van Klassiek" loading="lazy" tabindex="-1"></iframe></div>
+      <div class="tekst"><h2>Klassiek</h2><p>Blauw en rustig, overzichtelijk opgebouwd.</p><a class="knop" href="claude/klassiek/index.html">Bekijk dit ontwerp</a></div>
+    </article>
+    <article class="kaart" style="--kleur:#C2570C">
+      <div class="voorbeeld"><iframe src="Codex/werkplaats/index.html" title="Voorbeeld van Werkplaats" loading="lazy" tabindex="-1"></iframe></div>
+      <div class="tekst"><h2>Werkplaats</h2><p>Oranje en zwart, stoer en compact.</p><a class="knop" href="Codex/werkplaats/index.html">Bekijk dit ontwerp</a></div>
+    </article>
+    <article class="kaart" style="--kleur:#2E7D4F">
+      <div class="voorbeeld"><iframe src="Codex/kust/index.html" title="Voorbeeld van Kust" loading="lazy" tabindex="-1"></iframe></div>
+      <div class="tekst"><h2>Kust</h2><p>Frisgroen en ruim, met grote foto's.</p><a class="knop" href="Codex/kust/index.html">Bekijk dit ontwerp</a></div>
+    </article>
+  </div>
 </main>
+<script>
+  function pasSchaalAan() {
+    document.querySelectorAll('.voorbeeld').forEach(function (v) {
+      v.firstElementChild.style.transform = 'scale(' + v.clientWidth / 1280 + ')';
+    });
+  }
+  pasSchaalAan();
+  addEventListener('resize', pasSchaalAan);
+</script>
 </body>
 </html>
