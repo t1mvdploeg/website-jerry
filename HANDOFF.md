@@ -18,7 +18,9 @@ Verder in de repo:
 - `claude/ideeen/`: schetspagina met vijf interactieve ideeën. Gekozen: klikbaar huis (nog niet ingebouwd), offerte-hulp (ingebouwd) en voor/na-galerij (ingebouwd als projectenoverzicht).
 - `claude/modern/`: afgevallen ontwerp, staat er nog.
 - `docs/foto-inventaris.md`: alle 83 aangeleverde foto's, gegroepeerd in 21 klussen.
-- `fotos-aangeleverd/`: de originele foto's en uitsneden. Staat buiten git (223 MB, met adressen en personen). De bron is de Drive-map van Melvin.
+- `Werkzaamheden.jpeg`: de flyer van het bedrijf met de zes diensten, het telefoonnummer en het e-mailadres.
+- `fotos-aangeleverd/`: de originele foto's en uitsneden. Staat buiten git (356 MB, met adressen en personen). De bron is de Drive-map van Melvin.
+- `whatsapp.md`: het gesprek met Melvin over de wensen. Staat ook buiten git.
 
 Controleren:
 ```sh
@@ -35,12 +37,13 @@ Beide slaagden op 10 oktober na de laatste wijziging. Alle vier de pagina's zijn
 - Foto's: opnamegegevens verwijderd, huisnummers buiten beeld of onleesbaar, geen herkenbare mensen of interieurs van klanten.
 - Beloftes als garantietermijn, openingstijden en reviews staan er niet op zolang de eigenaar ze niet heeft bevestigd.
 - Geen Motion-bibliotheek en geen 3D-effecten.
-- Geen commits met Claude als medeauteur. Er is geen remote; niets is gepusht.
+- Geen commits met Claude als medeauteur.
+- De repo staat privé op GitHub: https://github.com/t1mvdploeg/website-jerry. Privé omdat er foto's van huizen van klanten in staan.
 
 ## Open punten
 
 - **Safari:** alles is alleen in Chrome getest. Tim kijkt in Safari en heeft nog niet bevestigd dat de foto's en de knoppen daar werken.
-- **Beheersysteem:** Decap CMS zoals in `web-oostenrijk` leunt op Git Gateway van Netlify, en dat is afgeschreven. Eerste kandidaat is Pages CMS, nog niet getest. Voor de proef moet de repo naar GitHub.
+- **Beheersysteem:** Decap CMS zoals in `web-oostenrijk` leunt op Git Gateway van Netlify, en dat is afgeschreven. Eerste kandidaat is Pages CMS, nog niet getest. De repo staat nu op GitHub, dus de proef kan.
 - **Schuif is onscherp:** de houtrotfoto's (IMG_4110 t/m 4116) zijn schermafbeeldingen.
 - **Plaatsnamen per klus ontbreken;** ze zitten niet in de foto's.
 - **Klikbaar huis:** in welk ontwerp, en mag het de dienstenlijst vervangen?
@@ -52,7 +55,7 @@ Beide slaagden op 10 oktober na de laatste wijziging. Alle vier de pagina's zijn
 1. De drie ontwerpen in Safari bekijken en melden wat niet werkt.
 2. Melvins vader laten kiezen tussen klassiek, werkplaats en kust.
 3. Bij Melvin opvragen: de originele houtrotfoto's, de plaats per klus, wat er bij de woning met dakkapel is gedaan, en of de klanten weten dat hun huis op de site komt.
-4. Beslissen: mag `claude/modern/` weg, blijft `Codex/` in git, en mag de repo naar GitHub voor de proef met Pages CMS?
+4. Beslissen: mag `claude/modern/` weg, en moeten `fotos-aangeleverd/` en `whatsapp.md` ook naar GitHub?
 
 ## Volgende stap
 
