@@ -182,3 +182,6 @@ h2 { font-size: clamp(27px, 3.4vw, 38px); }
 .werk-tekst p { color: var(--muted); font-size: 14px; }
 @media (max-width: 960px) { .werk-lijst { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .werk-lijst { grid-template-columns: 1fr; } }
+
+/* Tikvriendelijk op touchschermen */
+@media (pointer: coarse) { .werk-stappen button { min-height: 44px; } p > a[href^="tel:"] { display: inline-block; padding-block: 12px; } }

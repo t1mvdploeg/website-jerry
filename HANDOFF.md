@@ -25,7 +25,7 @@ Controleren:
 python3 tools/check-mockups.py                              # klassiek: teksten, links, bestanden
 cd Codex && TMPDIR="$PWD/.cache/tmp" node .qa/check.cjs     # kust en werkplaats in de browser
 ```
-Beide slaagden op 9 oktober na de laatste wijziging. Foto's opnieuw maken: `python3 tools/fotos-exporteren.py`, daarna `python3 tools/projecten-bouwen.py`.
+Beide slaagden op 10 oktober na de laatste wijziging. Alle vier de pagina's zijn op 10 oktober in Chrome als telefoon (360 en 390 px) bekeken: geen zijwaarts scrollen, grotere tikvlakken voor Voor/Tijdens/Na en de navigatie, invoervelden minstens 16 px. Foto's opnieuw maken: `python3 tools/fotos-exporteren.py`, daarna `python3 tools/projecten-bouwen.py`.
 
 ## Besluiten
 
