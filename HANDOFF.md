@@ -61,6 +61,7 @@ Beide slaagden op 10 oktober na de laatste wijziging. Alle vier de pagina's zijn
 ## Voor Tim
 
 1. De drie ontwerpen in Safari bekijken en melden wat niet werkt.
+1a. Eerst de testopmerking van Claude op de keuzepagina verwijderen (met de beheerlink), dan pas de link naar Melvins vader sturen. Hij klikt linksonder op "Add a comment" en dan op de site.
 2. Melvins vader laten kiezen tussen klassiek, werkplaats en kust: stuur hem de link voor de klant (zie bovenaan), dan kan hij er ook opmerkingen bij zetten.
 3. Bij Melvin opvragen: de originele houtrotfoto's, de plaats per klus, wat er bij de woning met dakkapel is gedaan, en of de klanten weten dat hun huis op de site komt.
 4. Beslissen: mag `claude/modern/` weg, en moeten `fotos-aangeleverd/` en `whatsapp.md` ook naar GitHub?
