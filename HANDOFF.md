@@ -1,6 +1,14 @@
 # Handoff — website ATO Advies & Onderhoud
 
-Website voor de vader van Melvin (timmerbedrijf, Voorne aan Zee). Laatst bijgewerkt: 10 oktober 2026.
+Website voor de vader van Melvin (timmerbedrijf, Voorne aan Zee). Laatst bijgewerkt: 15 oktober 2026.
+
+## Online met de reviewtool (15 oktober 2026)
+
+- **Adres:** https://ato-advies.reviewlayer.workers.dev (Cloudflare, een Worker met alleen bestanden). Alleen de keuzepagina en de drie ontwerpen staan online, de rest van de repo niet. Zoekmachines worden geweerd (`robots.txt` en `X-Robots-Tag`).
+- **Opnieuw online zetten** na een wijziging: `bash tools/online-zetten.sh` (eenmalig vooraf `npx wrangler login`, in een gewone terminal).
+- **Reviewen:** de vier pagina's hebben de scriptregel van de reviewtool. Het project heet "ATO Advies & Onderhoud" en hangt aan dit adres. De links (voor de klant en voor Tim, los of in de werkruimte) vraag je op in `~/work/personal/website-review-tool`: `set -a; . ./.env; set +a; npm run project -- list` (Git Bash).
+- **Zonder code in de link** doet de scriptregel niets; ook lokaal via `file://` merk je er niets van.
+- Cloudflare Pages lukte niet ("Asset too large"); daarom een Worker. Gezien in Chrome: de balk op de keuzepagina, geen balk in de drie kleine voorbeelden.
 
 ## Stand
 
@@ -53,7 +61,7 @@ Beide slaagden op 10 oktober na de laatste wijziging. Alle vier de pagina's zijn
 ## Voor Tim
 
 1. De drie ontwerpen in Safari bekijken en melden wat niet werkt.
-2. Melvins vader laten kiezen tussen klassiek, werkplaats en kust.
+2. Melvins vader laten kiezen tussen klassiek, werkplaats en kust: stuur hem de link voor de klant (zie bovenaan), dan kan hij er ook opmerkingen bij zetten.
 3. Bij Melvin opvragen: de originele houtrotfoto's, de plaats per klus, wat er bij de woning met dakkapel is gedaan, en of de klanten weten dat hun huis op de site komt.
 4. Beslissen: mag `claude/modern/` weg, en moeten `fotos-aangeleverd/` en `whatsapp.md` ook naar GitHub?
 
