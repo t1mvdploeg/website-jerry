@@ -6,6 +6,8 @@ Website voor de vader van Melvin (timmerbedrijf, Voorne aan Zee). Laatst bijgewe
 
 De klant heeft 18 opmerkingen bij **Klassiek** gezet; ze staan met de stand van elk punt in `docs/review-opmerkingen.md`. Verwerkt: contact via e-mail in plaats van WhatsApp (de offerte-hulp zet nu een e-mail klaar, de vraag "Wanneer?" is weg), de teksten, het blok "Voor en na" weg (de schuif staat nu in "Waarom") en drie klussen eruit (topgevel, achterdeur, dorpel; ook in kust en werkplaats, want ze komen uit één lijst). Wacht op de klant: het nieuwe e-mailadres en de nieuwe foto's (paal, deur, twee foto's voor de schuif).
 
+Staat online sinds 23 oktober (gecontroleerd op de live site).
+
 ## Online met de reviewtool (15 oktober 2026)
 
 - **Adres:** https://ato-advies.reviewlayer.workers.dev (Cloudflare, een Worker met alleen bestanden). Alleen de keuzepagina en de drie ontwerpen staan online, de rest van de repo niet. Zoekmachines worden geweerd (`robots.txt` en `X-Robots-Tag`).
@@ -64,12 +66,11 @@ Beide slaagden op 23 oktober na de laatste wijziging; klassiek is toen ook in Ch
 
 ## Voor Tim
 
-1. De drie ontwerpen in Safari bekijken en melden wat niet werkt.
-1a. Eerst de testopmerking van Claude op de keuzepagina verwijderen (met de beheerlink), dan pas de link naar Melvins vader sturen. Hij klikt linksonder op "Add a comment" en dan op de site.
-2. Melvins vader laten kiezen tussen klassiek, werkplaats en kust: stuur hem de link voor de klant (zie bovenaan), dan kan hij er ook opmerkingen bij zetten.
-3. Bij Melvin opvragen: de originele houtrotfoto's, de plaats per klus, wat er bij de woning met dakkapel is gedaan, en of de klanten weten dat hun huis op de site komt.
+1. **Reviewtool bijwerken** (staat open): opmerking 2–6, 8–16 en 18 op "done", 7 en 17 open laten, de testopmerking (1) verwijderen. De beheersleutel staat alleen in `.env` van `website-review-tool` op de pc; zet hem ook op de laptop of doe het vanaf de pc. Daarna kan de klant kijken en akkoord geven.
+2. Bij de klant opvragen: het nieuwe e-mailadres, de nieuwe foto's (paal, deur, twee voor de schuif bij "Waarom"), of het Klassiek wordt, de plaats per klus, de originele houtrotfoto's, of de klanten weten dat hun huis op de site komt, en akkoord op de nieuwe teksten (zie Open punten).
+3. De drie ontwerpen in Safari bekijken en melden wat niet werkt.
 4. Beslissen: mag `claude/modern/` weg, en moeten `fotos-aangeleverd/` en `whatsapp.md` ook naar GitHub?
 
 ## Volgende stap
 
-Na de keuze van het ontwerp: de twee andere ontwerpen verwijderen, losse pagina's toevoegen (diensten, projecten, over ons, contact), het klikbare huis inbouwen als Tim dat wil, en het beheersysteem aansluiten.
+Komen het e-mailadres en de foto's binnen: verwerken volgens `docs/review-opmerkingen.md` (7, 10–12, 17), opnieuw online zetten en die opmerkingen op "done" zetten. Na de keuze van het ontwerp: de twee andere ontwerpen verwijderen, losse pagina's toevoegen (diensten, projecten, over ons, contact), het klikbare huis inbouwen als Tim dat wil, en het beheersysteem aansluiten.
