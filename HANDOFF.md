@@ -1,6 +1,10 @@
 # Handoff — website ATO Advies & Onderhoud
 
-Website voor de vader van Melvin (timmerbedrijf, Voorne aan Zee). Laatst bijgewerkt: 15 oktober 2026.
+Website voor de vader van Melvin (timmerbedrijf, Voorne aan Zee). Laatst bijgewerkt: 23 oktober 2026.
+
+## Opmerkingen van de klant (23 oktober 2026)
+
+De klant heeft 18 opmerkingen bij **Klassiek** gezet; ze staan met de stand van elk punt in `docs/review-opmerkingen.md`. Verwerkt: contact via e-mail in plaats van WhatsApp (de offerte-hulp zet nu een e-mail klaar, de vraag "Wanneer?" is weg), de teksten, het blok "Voor en na" weg (de schuif staat nu in "Waarom") en drie klussen eruit (topgevel, achterdeur, dorpel; ook in kust en werkplaats, want ze komen uit één lijst). Wacht op de klant: het nieuwe e-mailadres en de nieuwe foto's (paal, deur, twee foto's voor de schuif).
 
 ## Online met de reviewtool (15 oktober 2026)
 
@@ -20,7 +24,7 @@ Er liggen drie ontwerpen voor de homepage waaruit Melvins vader moet kiezen. Ope
 | Werkplaats (oranje en zwart) | `Codex/werkplaats/` | Codex |
 | Kust (frisgroen) | `Codex/kust/` | Codex |
 
-Alle drie hebben: echte foto's van eigen werk, een voor/na-schuif (kozijnhoek met houtrot), een projectenoverzicht met negen klussen (wisselen tussen voor, tijdens en na; filter op soort werk) en een offerte-hulp die een WhatsApp-bericht klaarzet.
+Alle drie hebben: echte foto's van eigen werk, een voor/na-schuif (kozijnhoek met houtrot), een projectenoverzicht met zes klussen (wisselen tussen voor, tijdens en na; filter op soort werk) en een offerte-hulp die een WhatsApp-bericht klaarzet (bij klassiek sinds 23 oktober een e-mail).
 
 Verder in de repo:
 - `claude/ideeen/`: schetspagina met vijf interactieve ideeën. Gekozen: klikbaar huis (nog niet ingebouwd), offerte-hulp (ingebouwd) en voor/na-galerij (ingebouwd als projectenoverzicht).
@@ -35,7 +39,7 @@ Controleren:
 python3 tools/check-mockups.py                              # klassiek: teksten, links, bestanden
 cd Codex && TMPDIR="$PWD/.cache/tmp" node .qa/check.cjs     # kust en werkplaats in de browser
 ```
-Beide slaagden op 10 oktober na de laatste wijziging. Alle vier de pagina's zijn op 10 oktober in Chrome als telefoon (360 en 390 px) bekeken: geen zijwaarts scrollen, grotere tikvlakken voor Voor/Tijdens/Na en de navigatie, invoervelden minstens 16 px. Foto's opnieuw maken: `python3 tools/fotos-exporteren.py`, daarna `python3 tools/projecten-bouwen.py`.
+Beide slaagden op 23 oktober na de laatste wijziging; klassiek is toen ook in Chrome op 1440 en 390 px bekeken. Alle vier de pagina's zijn op 10 oktober in Chrome als telefoon (360 en 390 px) bekeken: geen zijwaarts scrollen, grotere tikvlakken voor Voor/Tijdens/Na en de navigatie, invoervelden minstens 16 px. Foto's opnieuw maken: `python3 tools/fotos-exporteren.py`, daarna `python3 tools/projecten-bouwen.py`.
 
 ## Besluiten
 
@@ -55,7 +59,7 @@ Beide slaagden op 10 oktober na de laatste wijziging. Alle vier de pagina's zijn
 - **Schuif is onscherp:** de houtrotfoto's (IMG_4110 t/m 4116) zijn schermafbeeldingen.
 - **Plaatsnamen per klus ontbreken;** ze zitten niet in de foto's.
 - **Klikbaar huis:** in welk ontwerp, en mag het de dienstenlijst vervangen?
-- **Teksten** zijn een eerste opzet en niet door de eigenaar nagekeken.
+- **Teksten** zijn een eerste opzet en niet door de eigenaar nagekeken. Nieuw op 23 oktober en nog niet door de klant bevestigd: bij "Waarom" de punten "Herstellen waar het kan" en "Netjes opgeruimd na afloop", en bij "Snelle afspraak" de zin "Korte lijnen, u spreekt direct de vakman zelf."
 - **Omvang:** de git-map is ruim 30 MB doordat de foto's in drie ontwerpen staan.
 
 ## Voor Tim

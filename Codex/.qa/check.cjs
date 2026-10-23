@@ -98,7 +98,7 @@ const report = [];
         assert.notEqual(await jobPhoto.getAttribute('src'), resultSrc, `${variant}/${width}: projectfoto wisselt niet`);
         await page.waitForFunction(() => { const img = document.querySelector('[data-werk-img]'); return img.complete && img.naturalWidth > 0; });
         await page.locator('[data-werk-filter] button[data-dienst="houtrot"]').click();
-        assert.equal(await page.locator('.werk:visible').count(), 2, `${variant}/${width}: filter op houtrot`);
+        assert.equal(await page.locator('.werk:visible').count(), 1, `${variant}/${width}: filter op houtrot`);
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), width, `${variant}/${width}: overflow in projectenoverzicht`);
         report.push({ variant, width, ...layout, interaction: 'OK', errors });
         await page.close();

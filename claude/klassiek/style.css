@@ -164,7 +164,6 @@ h2 { font-size: clamp(27px, 3.4vw, 38px); }
 .offerte-bericht { margin: 0; padding: 12px 16px; background: var(--soft); border-left: 4px solid var(--blue); white-space: pre-line; font-size: 15px; }
 
 /* ---------- Projecten: per klus wisselen tussen voor, tijdens en na ---------- */
-#projecten { padding-top: 0; }
 .werk-filter { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
 .werk-filter button { padding: 9px 16px; border: 2px solid var(--line); border-radius: 999px; background: #fff; color: var(--ink); font: 700 14px/1.3 var(--head); cursor: pointer; }
 .werk-filter button[aria-pressed="true"] { background: var(--blue); border-color: var(--blue); color: #fff; }

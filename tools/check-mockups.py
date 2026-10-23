@@ -14,16 +14,15 @@ REQUIRED = [
     'lang="nl"',
     'name="viewport"',
     'href="tel:+31621193640"',
-    'href="https://wa.me/31621193640"',
     'href="mailto:atoadvies@live.nl"',
 ]
 # Sleutels die in elke versie moeten staan; de rest van nl.json is optioneel per versie.
 REQUIRED_KEYS = (
-    ["meta.title", "brand.name", "hero.title", "hero.lead", "hero.call", "hero.whatsapp"]
+    ["meta.title", "brand.name", "hero.title", "hero.lead", "hero.call", "hero.mail"]
     + [f"services.s{i}.{part}" for i in range(1, 7) for part in ("title", "text")]
-    + ["beforeafter.before", "beforeafter.after", "beforeafter.note"]
+    + ["beforeafter.before", "beforeafter.after"]
     + ["why.p1", "why.p2", "why.p3", "area.place1", "area.place2", "area.place3"]
-    + ["contact.title", "contact.call", "contact.whatsapp", "contact.mail", "footer.kvk"]
+    + ["contact.title", "contact.call", "contact.mail", "footer.kvk"]
 )
 
 

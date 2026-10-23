@@ -31,14 +31,8 @@ PROJECTEN = [
         "voor": "Verrotte stijl naast een raam", "tijdens": "Nieuw hout ingezet naast het raam", "na": "Stijl hersteld en geschilderd"}),
     ("kozijnen", "Nieuwe kozijnen", "ramen", {
         "tijdens": "Oud kozijn uit de gevel gehaald", "na": "Nieuw kozijn met roedeverdeling in donkere baksteen"}),
-    ("topgevel", "Topgevel in zwart hout", "gevel", {
-        "tijdens": "Topgevel met folie en regelwerk", "na": "Topgevel bekleed met zwart hout"}),
-    ("achterdeur", "Achterdeur met veiligheidsslot", "sluitwerk", {
-        "tijdens": "Nieuwe achterdeur, nog zonder sluitwerk", "na": "Achterdeur met veiligheidsslot"}),
     ("luifel", "Luifel boven de voordeur", "boeilijsten", {
         "voor": "Luifel met open onderkant", "na": "Luifel met nieuwe witte bekleding"}),
-    ("dorpel", "Onderdorpel van een deur", "houtrot", {
-        "tijdens": "Onderdorpel van een deur tijdens het herstel", "na": "Onderdorpel hersteld en geschilderd"}),
     ("zolder", "Installatie op zolder weggewerkt", "overig", {
         "voor": "Zolder met open installatie", "tijdens": "Houten wand rond de installatie", "na": "Afgewerkte wand met deuren"}),
     ("kantoor", "Scheidingswand in een kantoor", "overig", {

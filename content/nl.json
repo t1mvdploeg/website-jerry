@@ -10,7 +10,6 @@
   },
   "nav": {
     "services": "Diensten",
-    "beforeafter": "Voor en na",
     "area": "Werkgebied",
     "contact": "Contact",
     "projects": "Projecten"
@@ -18,9 +17,9 @@
   "hero": {
     "kicker": "Timmerwerken in Voorne aan Zee",
     "title": "Vakkundig timmerwerk aan uw woning",
-    "lead": "Van een rot kozijn tot een complete nieuwe gevelbekleding: ATO Advies & Onderhoud lost het netjes en snel op. Gediplomeerd, verzekerd en altijd met een vrijblijvende offerte.",
+    "lead": "Van een rot kozijn tot een complete nieuwe gevelbekleding: ATO Advies & Onderhoud lost het netjes en snel op. Gediplomeerd, verzekerd en altijd met een vrijblijvende offerte. Sinds 2000 actief in de bouw.",
     "call": "Bel 06-21193640",
-    "whatsapp": "Stuur een WhatsApp"
+    "mail": "Stuur een e-mail"
   },
   "trust": {
     "t1": {
@@ -28,16 +27,16 @@
       "text": "Vakwerk van een gediplomeerd timmerman, volledig verzekerd."
     },
     "t2": {
-      "title": "Snelle service",
-      "text": "Korte lijnen en snel een afspraak."
+      "title": "Snelle afspraak",
+      "text": "Korte lijnen, u spreekt direct de vakman zelf."
     },
     "t3": {
       "title": "Vrijblijvende offerte",
       "text": "U weet vooraf waar u aan toe bent."
     },
     "t4": {
-      "title": "Lokaal",
-      "text": "Voorne aan Zee, Spijkenisse en Ouddorp."
+      "title": "Ervaring",
+      "text": "Sinds 2000 vertrouwd in timmerwerk, onderhoud en advies."
     }
   },
   "services": {
@@ -49,11 +48,11 @@
     },
     "s2": {
       "title": "Gevelbekleding",
-      "text": "Uw gevel opnieuw bekleed met Trespa of multiplex, strak afgewerkt."
+      "text": "Uw gevel opnieuw bekleed met kunststof, hout of rabatdelen, strak afgewerkt."
     },
     "s3": {
       "title": "Boeilijsten vervangen",
-      "text": "Verweerde boeilijsten vervangen, in het materiaal dat bij uw woning past."
+      "text": "Verweerde boeilijsten vervangen, in het materiaal dat bij uw woning past, zoals multiplex of Trespa."
     },
     "s4": {
       "title": "Houtrotherstel kozijnen",
@@ -61,7 +60,7 @@
     },
     "s5": {
       "title": "Hang- en sluitwerk",
-      "text": "Nieuwe scharnieren, sloten en deurbeslag, goed afgehangen en sluitend."
+      "text": "Nieuwe sloten, cilinders en deurbeslag, goed afgehangen en netjes sluitend."
     },
     "s6": {
       "title": "Overig timmerwerk",
@@ -69,17 +68,14 @@
     }
   },
   "beforeafter": {
-    "title": "Voor en na",
-    "lead": "Schuif over de foto om het verschil te zien.",
     "before": "Voor",
-    "after": "Na",
-    "note": "Houtrot in een kozijnhoek: hersteld en opnieuw geschilderd."
+    "after": "Na"
   },
   "why": {
     "title": "Eerlijk advies en netjes werk",
     "text": "U krijgt eerst eerlijk advies over wat er echt nodig is: herstellen als het kan, vervangen als het moet. Daarna voeren we het werk netjes en zonder gedoe uit.",
-    "p1": "Gediplomeerd en verzekerd",
-    "p2": "Snelle service",
+    "p1": "Herstellen waar het kan",
+    "p2": "Netjes opgeruimd na afloop",
     "p3": "Altijd een vrijblijvende offerte"
   },
   "area": {
@@ -92,9 +88,8 @@
   },
   "contact": {
     "title": "Vraag een vrijblijvende offerte aan",
-    "text": "Bel of stuur een WhatsApp-bericht, het liefst met een paar foto's van de klus. Dan weet u snel waar u aan toe bent.",
+    "text": "Bel of stuur een e-mail, het liefst met een paar foto's van de klus. Dan weet u snel waar u aan toe bent.",
     "call": "Bel 06-21193640",
-    "whatsapp": "WhatsApp",
     "mail": "atoadvies@live.nl"
   },
   "footer": {
@@ -104,11 +99,7 @@
   "offerte": {
     "klus": "1. Wat voor klus?",
     "plaats": "2. Waar?",
-    "wanneer": "3. Wanneer?",
-    "anders": "Ergens anders",
-    "w1": "Zo snel mogelijk",
-    "w2": "Binnen een maand",
-    "w3": "Geen haast"
+    "anders": "Ergens anders"
   },
   "projects": {
     "title": "Recent werk",
@@ -131,10 +122,7 @@
       "schuur": "Schuur met nieuwe dakrand",
       "stijl": "Houtrot naast een raam",
       "kozijnen": "Nieuwe kozijnen",
-      "topgevel": "Topgevel in zwart hout",
-      "achterdeur": "Achterdeur met veiligheidsslot",
       "luifel": "Luifel boven de voordeur",
-      "dorpel": "Onderdorpel van een deur",
       "zolder": "Installatie op zolder weggewerkt",
       "kantoor": "Scheidingswand in een kantoor"
     }
