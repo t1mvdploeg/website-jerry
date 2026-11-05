@@ -37,5 +37,5 @@ Het nummer is het nummer in de reviewtool. Tussen aanhalingstekens staat wat er 
 
 ## Opruimen
 
-- [ ] **1.** De testopmerking van Claude op de keuzepagina ("Testopmerking van Claude, mag weg.") verwijderen in de reviewtool.
-- [ ] Na het verwerken: elke opmerking in de reviewtool op "done" zetten, zodat de klant kan kijken en akkoord geven.
+- [x] **1.** (5 november verwijderd) De testopmerking van Claude op de keuzepagina ("Testopmerking van Claude, mag weg.") verwijderen in de reviewtool.
+- [x] Na het verwerken: op 5 november eerst op "done" gezet, daarna op Tims verzoek alle verwerkte opmerkingen uit de reviewtool verwijderd. Alleen 7 staat er nog. Kopie: `fotos-aangeleverd/reviewtool-backup-2026-11-05.json`.
