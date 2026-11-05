@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Controleert de mockups: teksten gelijk aan content/nl.json, links en bestanden kloppen.
 
-Gebruik: python3 tools/check-mockups.py [klassiek] [modern]
+Gebruik: python3 tools/check-mockups.py [klassiek]
 """
 import json
 import sys

@@ -4,3 +4,4 @@ __pycache__/
 fotos-aangeleverd/
 .online/
 .wrangler/
+tools/node_modules/

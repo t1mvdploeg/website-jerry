@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Zet het projectenoverzicht in de drie ontwerpen, vanuit één lijst met klussen.
+"""Zet het projectenoverzicht in klassiek, vanuit één lijst met klussen.
 
 Gebruik: python3 tools/projecten-bouwen.py
-Kopieert de foto's uit fotos-aangeleverd/web/ naar elk ontwerp en schrijft de sectie tussen de
+Kopieert de foto's uit fotos-aangeleverd/web/ naar klassiek en schrijft de sectie tussen de
 markeringen <!-- projecten:start --> en <!-- projecten:end -->. Opnieuw draaien vervangt de sectie.
-De opmaak staat in de stylesheet van elk ontwerp, het gedrag in het script van elk ontwerp.
+De opmaak staat in de stylesheet, het gedrag in het script van de pagina.
 """
 import json
 import shutil
@@ -73,20 +73,6 @@ ONTWERPEN = {
         "open": '<section class="sec" id="projecten">\n  <div class="wrap">\n    <div class="head">\n      <h2{t}>{titel}</h2>\n      <p class="sub"{l}>{lead}</p>\n    </div>',
         "sluit": "  </div>\n</section>",
         "titel": "Recent werk", "lead": "Kies per klus tussen voor, tijdens en na.",
-    },
-    "kust": {
-        "map": ROOT / "Codex" / "kust", "fotos": "assets/projecten", "i18n": False,
-        "voor": '<section class="approach section wrap" id="aanpak"',
-        "open": '<section class="work section wrap" id="projecten" aria-labelledby="work-title"><div class="work-heading"><h2 id="work-title">{titel}</h2><p>{lead}</p></div>',
-        "sluit": "</section>",
-        "titel": "Zo ging het<br>bij anderen.", "lead": "Een greep uit het werk van het afgelopen jaar. Per klus ziet u hoe het was en hoe het werd.",
-    },
-    "werkplaats": {
-        "map": ROOT / "Codex" / "werkplaats", "fotos": "assets/projecten", "i18n": False,
-        "voor": '<section class="approach section" id="aanpak"',
-        "open": '<section class="work section" id="projecten" aria-labelledby="work-title"><div class="section-heading"><h2 id="work-title">{titel}</h2><p>{lead}</p></div>',
-        "sluit": "</section>",
-        "titel": "Eerst zien.<br>Dan geloven.", "lead": "Klussen van het afgelopen jaar. Kies per klus tussen voor, tijdens en na.",
     },
 }
 
