@@ -7,7 +7,7 @@ Het nummer is het nummer in de reviewtool. Tussen aanhalingstekens staat wat er 
 ## Nog nodig van de klant
 
 - Het nieuwe e-mailadres (bij 4, 5 en 7).
-- De nieuwe foto's: de versleten paal met houtrot en de nieuwe witte paal, de oude groene deur en de nieuwe wit/grijze deur (bij 10, 11 en 12), en twee foto's voor de schuif bij "Waarom" (17).
+- ~~De nieuwe foto's~~: binnen op 5 november 2026 (Drive-map "Fotos website 2", 20 foto's) en verwerkt.
 
 ## Contact: mail in plaats van WhatsApp
 
@@ -29,10 +29,10 @@ Het nummer is het nummer in de reviewtool. Tussen aanhalingstekens staat wat er 
 
 ## Foto's
 
-- [x] **10.** Projecten, "Topgevel bekleed met zwart hout": "we hebben nieuwe betere foto's, deze kan er dan uit" — Verwerkt: klus eruit; de nieuwe foto's volgen.
-- [x] **11.** Projecten, "Achterdeur met veiligheidsslot": "deze fotos ook eruit". Antwoord: "nieuwe foto van oude groene deur en dan met nieuwe wit/grijze deur." — Verwerkt: klus eruit; de nieuwe foto's volgen.
-- [x] **12.** Projecten, "Onderdorpel van een deur tijdens het herstel": "deze fotos eruit, en dan die andere foto's erin. die fotos die versleten paal met houtrot, naar die nieuwe paal met wit hout" — Verwerkt: klus eruit; de nieuwe foto's volgen.
-- [ ] **17.** Blok "Waarom", de foto "Nieuw hout ingezet in de hoek van een houten gevel": "deze foto weg, en dan 2 fotos met een slider ervoor terug." — Half: de foto is vervangen door de bestaande voor/na-schuif. Wacht op de twee nieuwe foto's.
+- [x] **10.** Projecten, "Topgevel bekleed met zwart hout": "we hebben nieuwe betere foto's, deze kan er dan uit" — Verwerkt: oude klus eruit. Nieuwe klussen erbij (5 november): "Nieuwe deur in een glazen pui" en "Doorgeefluik in een kantoorwand".
+- [x] **11.** Projecten, "Achterdeur met veiligheidsslot": "deze fotos ook eruit". Antwoord: "nieuwe foto van oude groene deur en dan met nieuwe wit/grijze deur." — Verwerkt: oude klus eruit. Nieuwe klus "Nieuwe achterdeur" met de groene deur (voor) en de witte deur (na), 5 november.
+- [x] **12.** Projecten, "Onderdorpel van een deur tijdens het herstel": "deze fotos eruit, en dan die andere foto's erin. die fotos die versleten paal met houtrot, naar die nieuwe paal met wit hout" — Verwerkt: oude klus eruit. Nieuwe klus "Paal bij de voordeur vernieuwd" (voor/na), 5 november.
+- [x] **17.** Blok "Waarom", de foto "Nieuw hout ingezet in de hoek van een houten gevel": "deze foto weg, en dan 2 fotos met een slider ervoor terug." — Verwerkt op 5 november: de schuif toont nu de paal, oud (bruin, houtrot) en nieuw (wit). Dezelfde paal staat ook bij de projecten.
 - [x] **2.** Blok "Voor en na": "kan opzich wel weg, is namelijk beetje overbodig aangezien bij 'projecten' al voor en na wordt laten zien" — Verwerkt: de schuif staat nu in het blok "Waarom" (zie 17).
 
 ## Opruimen

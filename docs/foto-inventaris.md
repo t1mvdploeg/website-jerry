@@ -63,3 +63,25 @@ Geschikt voor de schuif (uitsnede bijna gelijk): K21 (beide reeksen), K17, K14 e
 - Interieur van klanten zichtbaar door het glas: IMG_0234 en 0906.
 - Weinig foto's van een opgeruimd eindresultaat: op veel foto's staat nog een steiger of gereedschap.
 - Gevelbekleding met Trespa of multiplex, zoals de dienst heet, staat er niet tussen: wel zwart hout (K7) en een paneel onder een raam (K3).
+
+## Tweede levering (5 november 2026)
+
+Drive-map "Fotos website 2" van de klant: 20 HEIC-foto's, gedownload naar `fotos-aangeleverd/origineel/`. Vijf ervan (IMG_0234, 0894, 0898, 0900, 0906) zaten al in de eerste levering en zijn identiek.
+
+| Klus | Foto's | Gebruikt |
+| --- | --- | --- |
+| Paal bij de voordeur vernieuwd | IMG_8813 (voor), 8815 (na) | Projecten en de schuif bij "Waarom" in klassiek. Naambordje met huisnummer valt buiten de uitsnede. |
+| Nieuwe achterdeur | IMG_0774 (groene deur, voor), 0782 (witte deur, na) | Projecten |
+| Onderkant groene deur met houtrot | IMG_4196, 4197, 4198, 4233 | Niet gebruikt: detail van dezelfde deur, niet duidelijk voor of na |
+| Nieuwe deur in een glazen pui | IMG_8592 (avond), 8599 (tijdens), 8613 (na) | Projecten (8599, 8613) |
+| Doorgeefluik in een kantoorwand | IMG_8624 (voor), 8628 (tijdens), 8632 en 8641 (na) | Projecten (8624, 8628, 8641) |
+| Pui: paneel onder het raam (K3) en tuindeuren (K2) | IMG_0234, 0894–0906 | Niet gebruikt: interieur van de klant door het glas, op 0234 ook een persoon |
+
+## Op de site (stand 5 november 2026)
+
+18 klussen in het projectenoverzicht van alle drie de ontwerpen, de volgorde staat in `VOLGORDE` in `tools/projecten-bouwen.py`. Uit de eerste levering: K1, K4, K5, K6, K8, K11, K12, K13, K14, K16, K18, K19 en K21 (luifel en stijl). Niet gebruikt:
+
+- K7 (topgevel), K10 (dorpel) en K17 (achterdeur met slot): op verzoek van de klant weggehaald (reviewopmerkingen 10–12).
+- K2 en K3 (pui): interieur van de klant door het glas.
+- K9 (dakkapel): niet duidelijk wat er gedaan is. K15 (binnendeur) en K20 (vloer): maar één stap gefotografeerd.
+- IMG_3914 (K19, na) is zo uitgesneden dat de spiegeling van een persoon in het glas erbuiten valt.

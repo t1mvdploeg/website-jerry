@@ -1,10 +1,14 @@
 # Handoff — website ATO Advies & Onderhoud
 
-Website voor de vader van Melvin (timmerbedrijf, Voorne aan Zee). Laatst bijgewerkt: 23 oktober 2026.
+Website voor de vader van Melvin (timmerbedrijf, Voorne aan Zee). Laatst bijgewerkt: 5 november 2026.
+
+## Nieuwe foto's verwerkt (5 november 2026)
+
+De klant stuurde een tweede Drive-map ("Fotos website 2", 20 foto's; overzicht in `docs/foto-inventaris.md`, onderaan). Verwerkt in alle drie de ontwerpen via de twee fotoscripts: vier nieuwe klussen (paal bij de voordeur, nieuwe achterdeur, deur in een glazen pui, doorgeefluik). Daarbij acht bruikbare klussen uit de eerste levering die nog niet op de site stonden; nu 18 in totaal, de soorten werk door elkaar. Wat er niet op staat en waarom: `docs/foto-inventaris.md`, onderaan. In klassiek toont de schuif bij "Waarom" nu de paal voor en na (opmerking 17). Daarmee zijn 10, 11, 12 en 17 af; alleen 7 (het nieuwe e-mailadres) wacht nog. Niet gebruikt: de pui-foto's (interieur van de klant door het glas) en de detailfoto's van de groene deur. Gecontroleerd: `check-mockups.py`, `.qa/check.cjs` (filter op houtrot verwacht nu 3 klussen) en `.qa/focus-check.cjs` groen; klassiek met `Codex/.qa/check-klassiek.cjs` (server op poort 8765 nodig) op 1440, 768, 390 en 360 px (alle 41 projectfoto's laden, geen zijwaarts scrollen, schuif, stappen en filter) en in Chrome bekeken. Op een telefoon is het projectenoverzicht nu lang (18 kaarten onder elkaar). **Nog niet online gezet** en de reviewtool is nog niet bijgewerkt.
 
 ## Opmerkingen van de klant (23 oktober 2026)
 
-De klant heeft 18 opmerkingen bij **Klassiek** gezet; ze staan met de stand van elk punt in `docs/review-opmerkingen.md`. Verwerkt: contact via e-mail in plaats van WhatsApp (de offerte-hulp zet nu een e-mail klaar, de vraag "Wanneer?" is weg), de teksten, het blok "Voor en na" weg (de schuif staat nu in "Waarom") en drie klussen eruit (topgevel, achterdeur, dorpel; ook in kust en werkplaats, want ze komen uit één lijst). Wacht op de klant: het nieuwe e-mailadres en de nieuwe foto's (paal, deur, twee foto's voor de schuif).
+De klant heeft 18 opmerkingen bij **Klassiek** gezet; ze staan met de stand van elk punt in `docs/review-opmerkingen.md`. Verwerkt: contact via e-mail in plaats van WhatsApp (de offerte-hulp zet nu een e-mail klaar, de vraag "Wanneer?" is weg), de teksten, het blok "Voor en na" weg (de schuif staat nu in "Waarom") en drie klussen eruit (topgevel, achterdeur, dorpel; ook in kust en werkplaats, want ze komen uit één lijst). Wachtte op de klant: het nieuwe e-mailadres (nog steeds) en de nieuwe foto's (binnen op 5 november, zie hierboven).
 
 Staat online sinds 23 oktober (gecontroleerd op de live site).
 
@@ -40,6 +44,7 @@ Controleren:
 ```sh
 python3 tools/check-mockups.py                              # klassiek: teksten, links, bestanden
 cd Codex && TMPDIR="$PWD/.cache/tmp" node .qa/check.cjs     # kust en werkplaats in de browser
+cd Codex && node .qa/check-klassiek.cjs                    # klassiek in de browser (eerst de server op 8765)
 ```
 Beide slaagden op 23 oktober na de laatste wijziging; klassiek is toen ook in Chrome op 1440 en 390 px bekeken. Alle vier de pagina's zijn op 10 oktober in Chrome als telefoon (360 en 390 px) bekeken: geen zijwaarts scrollen, grotere tikvlakken voor Voor/Tijdens/Na en de navigatie, invoervelden minstens 16 px. Foto's opnieuw maken: `python3 tools/fotos-exporteren.py`, daarna `python3 tools/projecten-bouwen.py`.
 
@@ -66,11 +71,11 @@ Beide slaagden op 23 oktober na de laatste wijziging; klassiek is toen ook in Ch
 
 ## Voor Tim
 
-1. **Reviewtool bijwerken** (staat open): opmerking 2–6, 8–16 en 18 op "done", 7 en 17 open laten, de testopmerking (1) verwijderen. De beheersleutel staat alleen in `.env` van `website-review-tool` op de pc; zet hem ook op de laptop of doe het vanaf de pc. Daarna kan de klant kijken en akkoord geven.
-2. Bij de klant opvragen: het nieuwe e-mailadres, de nieuwe foto's (paal, deur, twee voor de schuif bij "Waarom"), of het Klassiek wordt, de plaats per klus, de originele houtrotfoto's, of de klanten weten dat hun huis op de site komt, en akkoord op de nieuwe teksten (zie Open punten).
+1. **Online zetten en reviewtool bijwerken** (staat open): `bash tools/online-zetten.sh`, daarna opmerking 2–6 en 8–18 op "done", 7 open laten, de testopmerking (1) verwijderen. Dat kan zonder beheersleutel vanaf de laptop met `npx wrangler d1 execute reviewlayer --remote` in `website-review-tool` (wrangler is daar ingelogd). In `.env` op de laptop staat bij `REVIEW_KEY` geen sleutel maar een link, dus `npm run project -- list` werkt hier niet. Daarna kan de klant kijken en akkoord geven.
+2. Bij de klant opvragen: het nieuwe e-mailadres, of het Klassiek wordt, de plaats per klus, de originele houtrotfoto's, of de klanten weten dat hun huis op de site komt, en akkoord op de nieuwe teksten (zie Open punten).
 3. De drie ontwerpen in Safari bekijken en melden wat niet werkt.
 4. Beslissen: mag `claude/modern/` weg, en moeten `fotos-aangeleverd/` en `whatsapp.md` ook naar GitHub?
 
 ## Volgende stap
 
-Komen het e-mailadres en de foto's binnen: verwerken volgens `docs/review-opmerkingen.md` (7, 10–12, 17), opnieuw online zetten en die opmerkingen op "done" zetten. Na de keuze van het ontwerp: de twee andere ontwerpen verwijderen, losse pagina's toevoegen (diensten, projecten, over ons, contact), het klikbare huis inbouwen als Tim dat wil, en het beheersysteem aansluiten.
+Online zetten en de reviewtool bijwerken (Voor Tim, punt 1). Komt het e-mailadres binnen: verwerken volgens `docs/review-opmerkingen.md` (7). Na de keuze van het ontwerp: de twee andere ontwerpen verwijderen, losse pagina's toevoegen (diensten, projecten, over ons, contact), het klikbare huis inbouwen als Tim dat wil, en het beheersysteem aansluiten.

@@ -25,6 +25,30 @@ STAPPEN = {"voor": "Voor", "tijdens": "Tijdens", "na": "Na"}
 
 # (bestandsnaam, titel, dienst, {stap: beschrijving van de foto})
 PROJECTEN = [
+    ("paal", "Paal bij de voordeur vernieuwd", "houtrot", {
+        "voor": "Versleten bekleding met houtrot rond een paal", "na": "Paal met nieuwe witte bekleding"}),
+    ("achterdeur", "Nieuwe achterdeur", "ramen", {
+        "voor": "Oude groene achterdeur met houtrot", "na": "Nieuwe witte achterdeur"}),
+    ("entree", "Nieuwe deur in een glazen pui", "ramen", {
+        "tijdens": "Opening in de pui voor de nieuwe deur", "na": "Pui met de nieuwe deur"}),
+    ("luik", "Doorgeefluik in een kantoorwand", "overig", {
+        "voor": "Dichte wand in een kantoor", "tijdens": "Opening uitgezaagd in de wand", "na": "Afgewerkt luik met vensterbank"}),
+    ("raam", "Nieuw raam in rode baksteen", "ramen", {
+        "tijdens": "Raamopening met het nieuwe kozijn", "na": "Nieuw raam, afgewerkt"}),
+    ("stelling", "Stelling en werkbank in een container", "overig", {
+        "voor": "Lege container met de eerste staanders", "na": "Container met stelling en werkbank"}),
+    ("wasgoot", "Frame voor een rvs-wasgoot", "overig", {
+        "tijdens": "Houten frame tegen de wand", "na": "Wasgoot op het afgewerkte frame"}),
+    ("wand", "Kantoorwand met deur", "overig", {
+        "tijdens": "Frame van de nieuwe wand", "na": "Afgewerkte wand met deur"}),
+    ("voordeur", "Nieuwe voordeur", "ramen", {
+        "tijdens": "Nieuwe deur klaar om te plaatsen", "na": "Nieuwe witte voordeur in een rood kozijn"}),
+    ("rijwoning", "Kozijnen op de verdieping", "ramen", {
+        "tijdens": "Steiger voor de gevel van een rijwoning", "na": "Rijwoning met nieuwe kozijnen"}),
+    ("chalet", "Hoek van een houten chalet hersteld", "houtrot", {
+        "tijdens": "Nieuw hout ingezet in de hoek", "na": "Herstelde hoek, geschilderd"}),
+    ("windveren", "Windveren bij een rieten dak", "boeilijsten", {
+        "tijdens": "Steiger voor de topgevel", "na": "Nieuwe witte windveren onder het riet"}),
     ("schuur", "Schuur met nieuwe dakrand", "boeilijsten", {
         "voor": "Schuur met verweerde dakrand", "tijdens": "Dakrand met nieuwe latten en folie", "na": "Schuur met nieuwe witte windveren"}),
     ("stijl", "Houtrot naast een raam", "houtrot", {
@@ -38,6 +62,9 @@ PROJECTEN = [
     ("kantoor", "Scheidingswand in een kantoor", "overig", {
         "voor": "Open kantoorruimte", "tijdens": "Metalen frame van de wand", "na": "Afgewerkte wand met deur"}),
 ]
+VOLGORDE = ["paal", "achterdeur", "schuur", "stijl", "entree", "luik", "raam", "kozijnen", "stelling", "luifel",
+            "voordeur", "zolder", "chalet", "rijwoning", "wasgoot", "kantoor", "windveren", "wand"]
+PROJECTEN.sort(key=lambda p: VOLGORDE.index(p[0]))
 
 ONTWERPEN = {
     "klassiek": {

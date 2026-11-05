@@ -75,8 +75,31 @@ PROJECTEN = [
     ("kozijnen-na", "IMG_0401", 0.5, 0.47, 1.0),
     ("topgevel-tijdens", "IMG_1838", 0.5, 0.40, 1.0),
     ("topgevel-na", "IMG_1841", 0.5, 0.42, 1.0),
-    ("achterdeur-tijdens", "IMG_3389", 0.5, 0.5, 1.0),
-    ("achterdeur-na", "IMG_3411", 0.5, 0.45, 1.0),
+    ("achterdeur-voor", "IMG_0774", 0.5, 0.5, 1.0),
+    ("achterdeur-na", "IMG_0782", 0.5, 0.5, 1.0),
+    ("paal-voor", "IMG_8813", 0.45, 0.55, 0.8),   # naambordje met huisnummer valt boven de uitsnede
+    ("paal-na", "IMG_8815", 0.45, 0.55, 0.8),
+    ("entree-tijdens", "IMG_8599", 0.5, 0.5, 1.0),
+    ("entree-na", "IMG_8613", 0.5, 0.5, 1.0),
+    ("luik-voor", "IMG_8624", 0.5, 0.5, 1.0),
+    ("luik-tijdens", "IMG_8628", 0.5, 0.5, 1.0),
+    ("luik-na", "IMG_8641", 0.5, 0.5, 1.0),
+    ("raam-tijdens", "IMG_3911", 0.5, 0.5, 1.0),
+    ("raam-na", "IMG_3914", 0.68, 0.5, 0.65),   # spiegeling van een persoon links in het glas valt erbuiten
+    ("stelling-voor", "IMG_3685", 0.5, 0.5, 1.0),
+    ("stelling-na", "IMG_3694", 0.5, 0.5, 1.0),
+    ("wasgoot-tijdens", "IMG_3337", 0.5, 0.5, 1.0),
+    ("wasgoot-na", "IMG_3347", 0.5, 0.5, 1.0),
+    ("wand-tijdens", "IMG_2908", 0.5, 0.5, 1.0),
+    ("wand-na", "IMG_2927", 0.5, 0.5, 1.0),
+    ("voordeur-tijdens", "IMG_3883", 0.5, 0.5, 1.0),
+    ("voordeur-na", "3d0f344d", 0.5, 0.5, 1.0),
+    ("rijwoning-tijdens", "IMG_2074", 0.5, 0.5, 1.0),
+    ("rijwoning-na", "IMG_2086", 0.5, 0.5, 1.0),
+    ("chalet-tijdens", "IMG_1717", 0.5, 0.5, 1.0),
+    ("chalet-na", "IMG_1727", 0.5, 0.5, 1.0),
+    ("windveren-tijdens", "IMG_1476", 0.5, 0.5, 1.0),
+    ("windveren-na", "IMG_1474", 0.5, 0.5, 1.0),
     ("zolder-voor", "IMG_2948", 0.5, 0.5, 1.0),
     ("zolder-tijdens", "IMG_2973", 0.5, 0.5, 1.0),
     ("zolder-na", "IMG_2988", 0.5, 0.5, 1.0),
@@ -150,6 +173,9 @@ for stap, d in hoek.items():
     bewaar(hoek_uitsnede(d, 4 / 3, 0.32), f"kozijnhoek-{stap}-breed.jpg", (1200, 900))
 
 # ---------- Grote beelden ----------
+# Schuif bij "Waarom" in klassiek: de paal voor en na, zonder het naambordje erboven.
+bewaar(strook("IMG_8813", 0.0, 0.24, 1.0, 4 / 3), "paal-voor-breed.jpg", (1200, 900))
+bewaar(strook("IMG_8815", 0.0, 0.287, 1.0, 4 / 3), "paal-na-breed.jpg", (1200, 900))
 bewaar(strook("IMG_0472", 0.14, 0.03, 0.86, 3 / 2), "rij-kozijnen.jpg", (1800, 1200))      # nieuwe kozijnen, donkere baksteen
 bewaar(strook("IMG_1717", 0.0, 0.25, 1.0, 4 / 3), "herstel-hoek.jpg", (1600, 1200))        # nieuw hout in een hoek
 bewaar(strook("IMG_2086", 0.0, 0.08, 1.0, 16 / 9), "rijwoning.jpg", (2000, 1125))          # woning met nieuwe kozijnen

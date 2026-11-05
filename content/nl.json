@@ -119,12 +119,24 @@
       "overig": "Overig timmerwerk"
     },
     "p": {
+      "paal": "Paal bij de voordeur vernieuwd",
+      "achterdeur": "Nieuwe achterdeur",
       "schuur": "Schuur met nieuwe dakrand",
       "stijl": "Houtrot naast een raam",
+      "entree": "Nieuwe deur in een glazen pui",
+      "luik": "Doorgeefluik in een kantoorwand",
+      "raam": "Nieuw raam in rode baksteen",
       "kozijnen": "Nieuwe kozijnen",
+      "stelling": "Stelling en werkbank in een container",
       "luifel": "Luifel boven de voordeur",
+      "voordeur": "Nieuwe voordeur",
       "zolder": "Installatie op zolder weggewerkt",
-      "kantoor": "Scheidingswand in een kantoor"
+      "chalet": "Hoek van een houten chalet hersteld",
+      "rijwoning": "Kozijnen op de verdieping",
+      "wasgoot": "Frame voor een rvs-wasgoot",
+      "kantoor": "Scheidingswand in een kantoor",
+      "windveren": "Windveren bij een rieten dak",
+      "wand": "Kantoorwand met deur"
     }
   }
 }
