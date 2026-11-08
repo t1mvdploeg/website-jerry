@@ -73,14 +73,14 @@
   },
   "why": {
     "title": "Eerlijk advies en netjes werk",
-    "text": "U krijgt eerst eerlijk advies over wat er echt nodig is: herstellen als het kan, vervangen als het moet. Daarna voeren we het werk netjes en zonder gedoe uit.",
+    "text": "U krijgt eerst eerlijk advies over wat er echt nodig is: herstellen als het kan, vervangen als het moet.",
     "p1": "Herstellen waar het kan",
     "p2": "Netjes opgeruimd na afloop",
     "p3": "Altijd een vrijblijvende offerte"
   },
   "area": {
     "title": "Werkgebied",
-    "text": "Wij werken in heel Voorne aan Zee en komen ook regelmatig in Spijkenisse en Ouddorp. Woont u net daarbuiten? Bel gerust om te overleggen.",
+    "text": "Wij werken in heel Voorne aan Zee en komen ook regelmatig buiten deze regio, zoals Spijkenisse en Ouddorp. Woont u net daarbuiten? Bel gerust om te overleggen.",
     "place1": "Voorne aan Zee",
     "place2": "Spijkenisse",
     "place3": "Ouddorp",
@@ -119,24 +119,22 @@
       "overig": "Overig timmerwerk"
     },
     "p": {
-      "paal": "Paal bij de voordeur vernieuwd",
-      "achterdeur": "Nieuwe achterdeur",
-      "schuur": "Schuur met nieuwe dakrand",
-      "stijl": "Houtrot naast een raam",
-      "entree": "Nieuwe deur in een glazen pui",
-      "luik": "Doorgeefluik in een kantoorwand",
-      "raam": "Nieuw raam in rode baksteen",
       "kozijnen": "Nieuwe kozijnen",
-      "stelling": "Stelling en werkbank in een container",
+      "pui": "Van openslaande deuren naar vast glas met borstwering",
+      "achterdeur": "Nieuwe achterdeur",
+      "schuur": "Schuur met nieuwe boeilijsten",
+      "stijl": "Houtrot in kozijn",
+      "entree": "Toegangsdeur gemaakt in kozijn",
+      "luik": "Doorgeefluik in een kantoorwand",
       "luifel": "Luifel boven de voordeur",
       "voordeur": "Nieuwe voordeur",
       "zolder": "Installatie op zolder weggewerkt",
-      "chalet": "Hoek van een houten chalet hersteld",
-      "rijwoning": "Kozijnen op de verdieping",
-      "wasgoot": "Frame voor een rvs-wasgoot",
+      "rijwoning": "Van uitzetramen naar stolpramen",
       "kantoor": "Scheidingswand in een kantoor",
-      "windveren": "Windveren bij een rieten dak",
       "wand": "Kantoorwand met deur"
+    },
+    "o": {
+      "schuur": "Gedeelte dakbeschot, boeilijsten en windveren vervangen"
     }
   }
 }

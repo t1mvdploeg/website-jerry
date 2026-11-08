@@ -39,7 +39,9 @@ def bewaar(im, naam, maat):
 
 
 # Huisnummers die niet buiten de uitsnede te houden zijn: (x0, y0, x1, y1) als deel van de foto.
-ONLEESBAAR = {"IMG_3411": (0.09, 0.18, 0.235, 0.245), "IMG_3389": (0.09, 0.288, 0.235, 0.35)}
+ONLEESBAAR = {"IMG_3411": (0.09, 0.18, 0.235, 0.245), "IMG_3389": (0.09, 0.288, 0.235, 0.35),
+              "IMG_8592": (0.70, 0.35, 0.775, 0.395),   # huisnummer naast de pui
+              "IMG_0234": (0.322, 0.466, 0.443, 0.567)}  # bewoner binnen, door het glas
 
 
 def vierkant(stam, cx, cy, s=1.0):
@@ -79,6 +81,7 @@ PROJECTEN = [
     ("achterdeur-na", "IMG_0782", 0.5, 0.5, 1.0),
     ("paal-voor", "IMG_8813", 0.45, 0.55, 0.8),   # naambordje met huisnummer valt boven de uitsnede
     ("paal-na", "IMG_8815", 0.45, 0.55, 0.8),
+    ("entree-voor", "IMG_8592", 0.587, 0.5, 1.0),
     ("entree-tijdens", "IMG_8599", 0.5, 0.5, 1.0),
     ("entree-na", "IMG_8613", 0.5, 0.5, 1.0),
     ("luik-voor", "IMG_8624", 0.5, 0.5, 1.0),
@@ -108,6 +111,9 @@ PROJECTEN = [
     ("kantoor-voor", "IMG_2526", 0.5, 0.5, 1.0),
     ("kantoor-tijdens", "IMG_2538", 0.5, 0.5, 1.0),
     ("kantoor-na", "IMG_2596", 0.45, 0.5, 1.0),
+    ("pui-voor", "IMG_0234", 0.575, 0.5, 0.85),   # spiegeling van een persoon links valt erbuiten
+    ("pui-tijdens", "IMG_0894", 0.5, 0.45, 1.0),
+    ("pui-na", "IMG_0906", 0.54, 0.48, 0.92),     # naambordje links valt erbuiten
     ("dorpel-tijdens", "IMG_1932", 0.5, 0.5, 1.0),
     ("dorpel-na", "IMG_1936", 0.55, 0.5, 1.0),
 ]

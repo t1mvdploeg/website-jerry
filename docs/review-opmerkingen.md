@@ -39,3 +39,16 @@ Het nummer is het nummer in de reviewtool. Tussen aanhalingstekens staat wat er 
 
 - [x] **1.** (5 november verwijderd) De testopmerking van Claude op de keuzepagina ("Testopmerking van Claude, mag weg.") verwijderen in de reviewtool.
 - [x] Na het verwerken: op 5 november eerst op "done" gezet, daarna op Tims verzoek alle verwerkte opmerkingen uit de reviewtool verwijderd. Alleen 7 staat er nog. Kopie: `fotos-aangeleverd/reviewtool-backup-2026-11-05.json`.
+
+## Tweede ronde (8 november 2026)
+
+Op 8 november verwerkt en live gezet; in de reviewtool staan ze op "done" met een antwoord, zodat de klant kan goedkeuren of terugzetten.
+
+- [x] **19.** "Waarom": laatste zin weg ("Daarna voeren we het werk netjes en zonder gedoe uit.").
+- [x] **20, 22–26.** Klussen weg: paal (staat al in de schuif bij "Waarom"), raam in rode baksteen, stelling in container, chalethoek, wasgoot, windveren.
+- [x] **21.** Nieuwe deur in een glazen pui: voorfoto erbij (IMG_8592, via de app; huisnummer vervaagd).
+- [x] **27.** Werkgebied: "... en komen ook regelmatig buiten deze regio, zoals Spijkenisse en Ouddorp."
+- [x] **28.** Titel rijwoning: "Van uitzetramen naar stolpramen".
+- [x] **29.** "Nieuwe kozijnen" bovenaan.
+- [x] **30–33.** Titels: "Schuur met nieuwe boeilijsten", "Houtrot in kozijn", "Toegangsdeur gemaakt in kozijn"; onder de schuur de omschrijving "Gedeelte dakbeschot, boeilijsten en windveren vervangen".
+- [x] Via de app: nieuwe klus "Van openslaande deuren naar vast glas met borstwering" (IMG_0234 voor, 0894 tijdens, 0906 na). Bewoner binnen op 0234 vervaagd, spiegeling en naambordje vallen buiten de uitsnede.

@@ -1,6 +1,13 @@
 # Handoff — website ATO Advies & Onderhoud
 
-Website voor de vader van Melvin (timmerbedrijf, Voorne aan Zee). Laatst bijgewerkt: 5 november 2026.
+Website voor de vader van Melvin (timmerbedrijf, Voorne aan Zee). Laatst bijgewerkt: 8 november 2026.
+
+## Tweede ronde klantopmerkingen (8 november 2026)
+
+Opmerkingen 19–33 uit de reviewtool en twee appjes van Melvin verwerkt (zie `docs/review-opmerkingen.md`, onderaan): zes klussen weg, de pui-klus erbij, voorfoto bij de entree, kozijnen bovenaan, titels en twee teksten aangepast. Nu 13 klussen. Live gezet en live nagekeken; in de reviewtool staan 19–33 op "done" met een antwoord, zodat de klant kan goedkeuren. Alleen 7 (e-mailadres) staat nog open. Controles groen (`check-mockups.py`, `check-klassiek.cjs` op 1440/768/390/360). `check-klassiek.cjs` start nu op Windows Chrome via `channel: 'chrome'`.
+
+- **Pc mist de tweede fotolevering** (`fotos-aangeleverd/` staat buiten git): de vier nieuwe uitsneden zijn op de pc los gemaakt met Pillow + pillow-heif, met dezelfde maten als in `fotos-exporteren.py`. IMG_8592 is als enige uit de tweede map ook op de pc gedownload. Drive-map tweede levering: https://drive.google.com/drive/folders/1AqjONYBwdrUljdKBNUJ3vDO0FQa-wLnU
+- **Klantlink:** de code verdwijnt na het openen uit de adresbalk. Kopieer de link dus nooit uit de browser, maar vraag hem op met `npm run project -- list`.
 
 ## Nieuwe foto's verwerkt (5 november 2026)
 

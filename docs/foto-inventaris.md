@@ -79,6 +79,8 @@ Drive-map "Fotos website 2" van de klant: 20 HEIC-foto's, gedownload naar `fotos
 
 ## Op de site (stand 5 november 2026)
 
+**8 november:** nu 13 klussen. Weg op verzoek van de klant: paal, raam, stelling, chalet, wasgoot, windveren. Erbij: de pui (K2/K3: IMG_0234, 0894, 0906, op verzoek van de klant, bewoner vervaagd) en de voorfoto van de entree (IMG_8592, huisnummer vervaagd).
+
 18 klussen in het projectenoverzicht van alle drie de ontwerpen, de volgorde staat in `VOLGORDE` in `tools/projecten-bouwen.py`. Uit de eerste levering: K1, K4, K5, K6, K8, K11, K12, K13, K14, K16, K18, K19 en K21 (luifel en stijl). Niet gebruikt:
 
 - K7 (topgevel), K10 (dorpel) en K17 (achterdeur met slot): op verzoek van de klant weggehaald (reviewopmerkingen 10–12).
