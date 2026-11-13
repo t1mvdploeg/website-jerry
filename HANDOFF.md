@@ -1,6 +1,12 @@
 # Handoff — website ATO Advies & Onderhoud
 
-Website voor de vader van Melvin (timmerbedrijf, Voorne aan Zee). Laatst bijgewerkt: 8 november 2026.
+Website voor de vader van Melvin (timmerbedrijf, Voorne aan Zee). Laatst bijgewerkt: 13 november 2026.
+
+## Derde ronde klantopmerkingen (13 november 2026)
+
+Opmerkingen 34–37 (alle vier over het blok "Wat wij doen") verwerkt, zie `docs/review-opmerkingen.md`, onderaan: nieuwe titel en tekst voor houtrotherstel (met 2-componenten epoxy), en houtrotherstel en hang- en sluitwerk naast ramen en deuren op de bovenste rij. Controles groen (`check-mockups.py`, `check-klassiek.cjs` op 1440/768/390/360). **Nog te doen door Tim:** live zetten met `bash tools/online-zetten.sh` en in de reviewtool 34–37 op "done" zetten met een antwoord. Vóór deze ronde was de live site gelijk aan commit 262612f.
+
+- De opmerkingen zijn opgehaald met de klantcode uit de werkruimtelink: `GET https://reviewlayer.reviewlayer.workers.dev/api/comments` met `authorization: Bearer <code>`. Een cloudsessie heeft daarvoor de omgeving "website-jerry" nodig (staat de reviewtool en de live site toe).
 
 ## Tweede ronde klantopmerkingen (8 november 2026)
 

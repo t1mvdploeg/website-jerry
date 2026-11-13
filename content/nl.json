@@ -55,8 +55,8 @@
       "text": "Verweerde boeilijsten vervangen, in het materiaal dat bij uw woning past, zoals multiplex of Trespa."
     },
     "s4": {
-      "title": "Houtrotherstel kozijnen",
-      "text": "Houtrot in kozijnen vakkundig hersteld, zodat vervangen vaak niet nodig is."
+      "title": "Gespecialiseerd in houtrotherstel aan kozijnen",
+      "text": "Houtrot in kozijnen vakkundig hersteld met 2-componenten epoxy, zodat vervangen vaak niet nodig is."
     },
     "s5": {
       "title": "Hang- en sluitwerk",
@@ -99,7 +99,8 @@
   "offerte": {
     "klus": "1. Wat voor klus?",
     "plaats": "2. Waar?",
-    "anders": "Ergens anders"
+    "anders": "Ergens anders",
+    "houtrot": "Houtrotherstel kozijnen"
   },
   "projects": {
     "title": "Recent werk",

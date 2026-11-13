@@ -52,3 +52,12 @@ Op 8 november verwerkt en live gezet; in de reviewtool staan ze op "done" met ee
 - [x] **29.** "Nieuwe kozijnen" bovenaan.
 - [x] **30–33.** Titels: "Schuur met nieuwe boeilijsten", "Houtrot in kozijn", "Toegangsdeur gemaakt in kozijn"; onder de schuur de omschrijving "Gedeelte dakbeschot, boeilijsten en windveren vervangen".
 - [x] Via de app: nieuwe klus "Van openslaande deuren naar vast glas met borstwering" (IMG_0234 voor, 0894 tijdens, 0906 na). Bewoner binnen op 0234 vervaagd, spiegeling en naambordje vallen buiten de uitsnede.
+
+## Derde ronde (13 november 2026)
+
+Op 12 november geplaatst, op 13 november verwerkt in de repo. Nog niet live gezet en nog niet beantwoord in de reviewtool.
+
+- [x] **34.** Dienst "Houtrotherstel kozijnen": wordt "Gespecialiseerd in houtrotherstel aan kozijnen" (de tekst uit het antwoord van de klant zelf). In de offerte-hulp heet de keuze nog steeds kort "Houtrotherstel kozijnen" (eigen sleutel `offerte.houtrot`).
+- [x] **35.** Tekst bij die dienst: "Houtrot in kozijnen vakkundig hersteld met 2-componenten epoxy, zodat vervangen vaak niet nodig is." De klant schreef "d.m.v 2 componten epoxy"; spelling verbeterd en "d.m.v." vervangen door "met".
+- [x] **36, 37.** Volgorde van de diensten: houtrotherstel midden boven, hang- en sluitwerk rechts boven. Nu: ramen en deuren, houtrotherstel, hang- en sluitwerk, gevelbekleding, boeilijsten, overig timmerwerk. Op een telefoon staan ze in die volgorde onder elkaar.
+- Titels van de dienstkaarten worden niet meer automatisch afgebroken (dat gaf "houtrother-stel").
