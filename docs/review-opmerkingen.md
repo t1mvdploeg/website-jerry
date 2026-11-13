@@ -6,7 +6,7 @@ Het nummer is het nummer in de reviewtool. Tussen aanhalingstekens staat wat er 
 
 ## Nog nodig van de klant
 
-- Het nieuwe e-mailadres (bij 4, 5 en 7).
+- ~~Het nieuwe e-mailadres (bij 4, 5 en 7)~~: info@atoadvies.nl, doorgegeven op 13 november 2026 en verwerkt.
 - ~~De nieuwe foto's~~: binnen op 5 november 2026 (Drive-map "Fotos website 2", 20 foto's) en verwerkt.
 
 ## Contact: mail in plaats van WhatsApp
@@ -14,7 +14,7 @@ Het nummer is het nummer in de reviewtool. Tussen aanhalingstekens staat wat er 
 - [x] **5.** Knop bovenaan "Stuur een WhatsApp": "kan dit ook naar mail veranderd worden" — Verwerkt: "Stuur een e-mail", nog met het oude adres.
 - [x] **4.** Offerte-hulp, het klaargezette bericht ("Hallo, ik wil graag een vrijblijvende offerte. …"): "kan dit ook naar ze e-mail? in plaats whatssapp" — Verwerkt: de mailknop opent een e-mail met de keuzes erin.
 - [x] **6.** Contactblok, de link "WhatsApp": "whatsapp dan weg"
-- [ ] **7.** Contactblok, "atoadvies@live.nl": "email nog veranderen naar ze nieuwe" — Wacht op het nieuwe adres. Staat op drie plekken in `claude/klassiek/index.html` en in `content/nl.json` (`contact.mail`).
+- [x] **7.** Contactblok, "atoadvies@live.nl": "email nog veranderen naar ze nieuwe" — Verwerkt op 13 november: overal info@atoadvies.nl (knop bovenaan, offerte-hulp, contactblok/voet, `content/nl.json` en de controle in `tools/check-mockups.py`).
 - [x] **3.** Offerte-hulp, de vraag "3. Wanneer?": "wanneer moet weg, moet namelijk gwn echt besproken worden door drukte."
 
 ## Teksten
@@ -55,7 +55,7 @@ Op 8 november verwerkt en live gezet; in de reviewtool staan ze op "done" met ee
 
 ## Derde ronde (13 november 2026)
 
-Op 12 november geplaatst, op 13 november verwerkt in de repo. Nog niet live gezet en nog niet beantwoord in de reviewtool.
+Op 12 november geplaatst, op 13 november verwerkt in de repo, samen met opmerking 7 (e-mailadres). Nog niet live gezet en nog niet beantwoord in de reviewtool.
 
 - [x] **34.** Dienst "Houtrotherstel kozijnen": wordt "Gespecialiseerd in houtrotherstel aan kozijnen" (de tekst uit het antwoord van de klant zelf). In de offerte-hulp heet de keuze nog steeds kort "Houtrotherstel kozijnen" (eigen sleutel `offerte.houtrot`).
 - [x] **35.** Tekst bij die dienst: "Houtrot in kozijnen vakkundig hersteld met 2-componenten epoxy, zodat vervangen vaak niet nodig is." De klant schreef "d.m.v 2 componten epoxy"; spelling verbeterd en "d.m.v." vervangen door "met".

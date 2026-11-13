@@ -4,13 +4,13 @@ Website voor de vader van Melvin (timmerbedrijf, Voorne aan Zee). Laatst bijgewe
 
 ## Derde ronde klantopmerkingen (13 november 2026)
 
-Opmerkingen 34–37 (alle vier over het blok "Wat wij doen") verwerkt, zie `docs/review-opmerkingen.md`, onderaan: nieuwe titel en tekst voor houtrotherstel (met 2-componenten epoxy), en houtrotherstel en hang- en sluitwerk naast ramen en deuren op de bovenste rij. Controles groen (`check-mockups.py`, `check-klassiek.cjs` op 1440/768/390/360). **Nog te doen door Tim:** live zetten met `bash tools/online-zetten.sh` en in de reviewtool 34–37 op "done" zetten met een antwoord. Vóór deze ronde was de live site gelijk aan commit 262612f.
+Opmerkingen 34–37 (alle vier over het blok "Wat wij doen") verwerkt, zie `docs/review-opmerkingen.md`, onderaan: nieuwe titel en tekst voor houtrotherstel (met 2-componenten epoxy), en houtrotherstel en hang- en sluitwerk naast ramen en deuren op de bovenste rij. Controles groen (`check-mockups.py`, `check-klassiek.cjs` op 1440/768/390/360). Ook het nieuwe e-mailadres is verwerkt: overal **info@atoadvies.nl** (opmerking 7). Daarmee staan er geen opmerkingen meer open. **Nog te doen door Tim:** live zetten met `bash tools/online-zetten.sh` en in de reviewtool 7 en 34–37 op "done" zetten met een antwoord. Vóór deze ronde was de live site gelijk aan commit 262612f.
 
 - De opmerkingen zijn opgehaald met de klantcode uit de werkruimtelink: `GET https://reviewlayer.reviewlayer.workers.dev/api/comments` met `authorization: Bearer <code>`. Een cloudsessie heeft daarvoor de omgeving "website-jerry" nodig (staat de reviewtool en de live site toe).
 
 ## Tweede ronde klantopmerkingen (8 november 2026)
 
-Opmerkingen 19–33 uit de reviewtool en twee appjes van Melvin verwerkt (zie `docs/review-opmerkingen.md`, onderaan): zes klussen weg, de pui-klus erbij, voorfoto bij de entree, kozijnen bovenaan, titels en twee teksten aangepast. Nu 13 klussen. Live gezet en live nagekeken; in de reviewtool staan 19–33 op "done" met een antwoord, zodat de klant kan goedkeuren. Alleen 7 (e-mailadres) staat nog open. Controles groen (`check-mockups.py`, `check-klassiek.cjs` op 1440/768/390/360). `check-klassiek.cjs` start nu op Windows Chrome via `channel: 'chrome'`.
+Opmerkingen 19–33 uit de reviewtool en twee appjes van Melvin verwerkt (zie `docs/review-opmerkingen.md`, onderaan): zes klussen weg, de pui-klus erbij, voorfoto bij de entree, kozijnen bovenaan, titels en twee teksten aangepast. Nu 13 klussen. Live gezet en live nagekeken; in de reviewtool staan 19–33 op "done" met een antwoord, zodat de klant kan goedkeuren. Alleen 7 (e-mailadres) stond toen nog open. Controles groen (`check-mockups.py`, `check-klassiek.cjs` op 1440/768/390/360). `check-klassiek.cjs` start nu op Windows Chrome via `channel: 'chrome'`.
 
 - **Pc mist de tweede fotolevering** (`fotos-aangeleverd/` staat buiten git): de vier nieuwe uitsneden zijn op de pc los gemaakt met Pillow + pillow-heif, met dezelfde maten als in `fotos-exporteren.py`. IMG_8592 is als enige uit de tweede map ook op de pc gedownload. Drive-map tweede levering: https://drive.google.com/drive/folders/1AqjONYBwdrUljdKBNUJ3vDO0FQa-wLnU
 - **Klantlink:** de code verdwijnt na het openen uit de adresbalk. Kopieer de link dus nooit uit de browser, maar vraag hem op met `npm run project -- list`.
@@ -77,10 +77,10 @@ Beide groen op 5 november na het verwijderen van de oude ontwerpen. Foto's opnie
 ## Voor Tim
 
 1. **Reviewtool:** alleen opmerking 7 staat er nog (5 november). Statussen bijwerken kan zonder beheersleutel vanaf de laptop met `npx wrangler d1 execute reviewlayer --remote` in `website-review-tool` (wrangler is daar ingelogd). In `.env` op de laptop staat bij `REVIEW_KEY` geen sleutel maar een link, dus `npm run project -- list` werkt hier niet.
-2. Bij de klant opvragen: het nieuwe e-mailadres, of het Klassiek wordt, de plaats per klus, de originele houtrotfoto's, of de klanten weten dat hun huis op de site komt, en akkoord op de nieuwe teksten (zie Open punten).
+2. Bij de klant opvragen: of het Klassiek wordt, de plaats per klus, de originele houtrotfoto's, of de klanten weten dat hun huis op de site komt, en akkoord op de nieuwe teksten (zie Open punten).
 3. Klassiek in Safari bekijken en melden wat niet werkt.
 4. Beslissen: moeten `fotos-aangeleverd/` en `whatsapp.md` ook naar GitHub?
 
 ## Volgende stap
 
-Komt het e-mailadres binnen: verwerken volgens `docs/review-opmerkingen.md` (7). Daarna: losse pagina's toevoegen (diensten, projecten, over ons, contact), het klikbare huis inbouwen als Tim dat wil, en het beheersysteem aansluiten.
+Live zetten (e-mailadres en 34–37). Daarna: losse pagina's toevoegen (diensten, projecten, over ons, contact), het klikbare huis inbouwen als Tim dat wil, en het beheersysteem aansluiten.

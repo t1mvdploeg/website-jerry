@@ -14,7 +14,7 @@ REQUIRED = [
     'lang="nl"',
     'name="viewport"',
     'href="tel:+31621193640"',
-    'href="mailto:atoadvies@live.nl"',
+    'href="mailto:info@atoadvies.nl"',
 ]
 # Sleutels die in elke versie moeten staan; de rest van nl.json is optioneel per versie.
 REQUIRED_KEYS = (
